@@ -1,6 +1,7 @@
 from fuzzy_expert.rule import FuzzyRule
+from ..Base.BaseRules import BaseRulesWrapper
 
-__rules = [
+__isothermalTransformationRules = [
     FuzzyRule(
         premise=[
             ("austenitizing_temperature", "Unsuitable"),
@@ -116,11 +117,8 @@ __rules = [
 ]
 
 class IsothermalTransformationRulesWrapper:
-    def __init__(self):
-        self.__fuzzy_rules = __rules
-
-    def getIsothermalTransformationRules(self):
-        return self.__fuzzy_rules
+    def setRules(self):
+        self.__fuzzy_rules = __isothermalTransformationRules
     
 
     

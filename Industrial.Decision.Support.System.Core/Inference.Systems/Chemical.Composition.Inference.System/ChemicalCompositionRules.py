@@ -1,6 +1,7 @@
 from fuzzy_expert.rule import FuzzyRule
+from ..Base.BaseRules import BaseRulesWrapper
 
-__rules = [
+__chemicalCompositionRules = [
     FuzzyRule(
         premise=[
             ("carbon", "Unsuitable"),
@@ -515,12 +516,9 @@ __rules = [
     )
 ]
 
-class ChemicalCompositionRulesWrapper:
-    def __init__(self):
-        self.__fuzzy_rules = __rules
-
-    def getChemicalCompositionRules(self):
-        return self.__fuzzy_rules
+class ChemicalCompositionRulesWrapper(BaseRulesWrapper):
+    def setRules(self):
+        self.__fuzzy_rules = __chemicalCompositionRules
     
 
     
