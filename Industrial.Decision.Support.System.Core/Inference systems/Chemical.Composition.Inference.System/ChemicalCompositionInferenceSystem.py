@@ -2,20 +2,21 @@ from .Variables import Variables as v
 from .Rules import Rules as r
 from fuzzy_expert.inference import DecompositionalInference
 
-class IsothermalTransformationInferenceSystem:
+class ChemicalCompositionInferenceSystem:
     def __init__(self, adiModel):
         self.__adiModel = adiModel
         self.__initWrappers()
-        self.__fuzzy_variables = self.__variablesWrapper.getIsothermalTransformationVariables()
-        self.__fuzzy_rules = self.__rulesWrapper.getIsothermalTransformationRules()
+        self.__fuzzy_variables = self.__variablesWrapper.getChemicalCompositionVariables()
+        self.__fuzzy_rules = self.__rulesWrapper.getChemicalCompositionRules()
         self.__initModel()
 
     def evaluateResults(self):
         self.__model(
             variables=self.__returnFuzzyVariables(),
             rules=self.__returnFuzzyRules(),
-            austenitizing_temperature = self.__adiModel.austenitizing_temperature,
-            isothermal_transformation_temperature = self.__adiModel.isothermal_transformation_temperature
+            carbon=self.__adiModel.carbon,
+            silicon=self.__adiModel.silicon,
+            manganese=self.__adiModel.manganese
         )
 
     def returnFuzzyModel(self):
@@ -28,8 +29,8 @@ class IsothermalTransformationInferenceSystem:
         return self.__fuzzy_rules
 
     def __initWrappers(self):
-        self.__variablesWrapper = v.IsothermalTransformationVariableWrapper()
-        self.__rulesWrapper = r.IsothermalTransformationRulesWrapper()
+        self.__variablesWrapper = v.ChemicalCompositionVariableWrapper()
+        self.__rulesWrapper = r.ChemicalCompositionRulesWrapper()
 
     def __initModel(self):
         self.__model = DecompositionalInference(
@@ -39,4 +40,5 @@ class IsothermalTransformationInferenceSystem:
             composition_operator="max-min",
             production_link="max",
             defuzzification_operator="cog"
-        ) 
+        )
+    
