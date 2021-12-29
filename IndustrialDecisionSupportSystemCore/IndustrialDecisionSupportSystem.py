@@ -1,5 +1,5 @@
 import IndustrialDecisionSupportSystemCore.Factory.ChemicalCompositionSystemFactory as cs
-import IndustrialDecisionSupportSystemCore.Factory.ChemicalCompositionSystemFactory as it
+import IndustrialDecisionSupportSystemCore.Factory.IsothermalTransformationSystemFactory as it
 
 
 class IndustrialDecisionSupportSystem:

@@ -4,7 +4,6 @@
     <list default="true" id="1b0ea78b-816e-4dc7-b562-e5bf810eb41b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +117,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionInferenceSystem.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
