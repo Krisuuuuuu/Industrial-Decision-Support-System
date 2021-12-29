@@ -1,7 +1,11 @@
+from abc import abstractmethod, ABC
+
 from fuzzy_expert.inference import DecompositionalInference
 
 
-class BaseInferenceSystem:
+class BaseInferenceSystem(ABC):
+
+    @abstractmethod
     def evaluate_results(self): pass
 
     def __init__(self, adi_model, variables, rules):
