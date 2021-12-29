@@ -1,5 +1,4 @@
 from abc import abstractmethod, ABC
-
 from fuzzy_expert.inference import DecompositionalInference
 
 

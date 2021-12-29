@@ -1,5 +1,5 @@
 from fuzzy_expert.rule import FuzzyRule
-from ..Base.BaseRules import BaseRulesWrapper
+import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseRules as r
 
 CHEMICAL_COMPOSITION_RULES = [
     FuzzyRule(
@@ -517,7 +517,7 @@ CHEMICAL_COMPOSITION_RULES = [
 ]
 
 
-class ChemicalCompositionRulesWrapper(BaseRulesWrapper):
+class ChemicalCompositionRulesWrapper(r.BaseRulesWrapper):
     def __init__(self):
         global CHEMICAL_COMPOSITION_RULES
         super().__init__()

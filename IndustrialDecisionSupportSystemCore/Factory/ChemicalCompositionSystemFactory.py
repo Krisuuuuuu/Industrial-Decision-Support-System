@@ -1,13 +1,13 @@
-from .Base.AbstractFactory import AbstractFactory
-from ..Builder.ChemicalCompositionSystemBuilder import ChemicalCompositionInferenceSystemBuilder
+import IndustrialDecisionSupportSystemCore.Factory.Base.AbstractFactory as af
+import IndustrialDecisionSupportSystemCore.Builder.ChemicalCompositionSystemBuilder as b
 
 
-class ChemicalCompositionSystemFactory(AbstractFactory):
+class ChemicalCompositionSystemFactory(af.AbstractFactory):
     def __init__(self):
         super().__init__()
 
     def create(self):
-        self._director.set_builder(ChemicalCompositionInferenceSystemBuilder())
+        self._director.set_builder(b.ChemicalCompositionInferenceSystemBuilder())
         system_instance = self._director.get_system_instance()
 
         return system_instance

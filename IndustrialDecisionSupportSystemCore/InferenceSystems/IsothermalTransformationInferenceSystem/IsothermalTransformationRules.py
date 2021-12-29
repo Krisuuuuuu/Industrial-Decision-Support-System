@@ -1,5 +1,5 @@
 from fuzzy_expert.rule import FuzzyRule
-from ..Base.BaseRules import BaseRulesWrapper
+import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseRules as r
 
 ISOTHERMAL_TRANSFORMATION_RULES = [
     FuzzyRule(
@@ -117,7 +117,7 @@ ISOTHERMAL_TRANSFORMATION_RULES = [
 ]
 
 
-class IsothermalTransformationRulesWrapper(BaseRulesWrapper):
+class IsothermalTransformationRulesWrapper(r.BaseRulesWrapper):
     def __init__(self):
         global ISOTHERMAL_TRANSFORMATION_RULES
         super().__init__()

@@ -1,7 +1,7 @@
-from ..Base.BaseInferenceSystem import BaseInferenceSystem
+import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseInferenceSystem as s
 
 
-class ChemicalCompositionInferenceSystem(BaseInferenceSystem):
+class ChemicalCompositionInferenceSystem(s.BaseInferenceSystem):
     def __init__(self, adi_model, variables, rules):
         super().__init__(adi_model, variables, rules)
 

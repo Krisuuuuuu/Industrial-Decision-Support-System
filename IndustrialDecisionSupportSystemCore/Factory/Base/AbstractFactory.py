@@ -1,5 +1,5 @@
 from abc import abstractmethod, ABC
-from ...Builder.Director import Director
+import IndustrialDecisionSupportSystemCore.Builder.Director as d
 
 
 class AbstractFactory(ABC):
@@ -7,4 +7,4 @@ class AbstractFactory(ABC):
     def create(self): pass
 
     def __init__(self):
-        self._director = Director()
+        self._director = d.Director()
