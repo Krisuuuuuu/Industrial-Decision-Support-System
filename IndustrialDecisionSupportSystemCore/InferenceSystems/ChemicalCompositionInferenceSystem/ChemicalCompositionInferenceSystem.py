@@ -6,10 +6,10 @@ class ChemicalCompositionInferenceSystem(BaseInferenceSystem):
         super().__init__(adi_model, variables, rules)
 
     def evaluate_results(self):
-        self.__model(
-            variables=self.__returnFuzzyVariables(),
-            rules=self.__returnFuzzyRules(),
-            carbon=self.__adiModel.carbon,
-            silicon=self.__adiModel.silicon,
-            manganese=self.__adiModel.manganese
+        self._model(
+            variables=self.return_fuzzy_variables(),
+            rules=self.return_fuzzy_rules(),
+            carbon=self._adiModel.carbon,
+            silicon=self._adiModel.silicon,
+            manganese=self._adiModel.manganese
         )

@@ -1,7 +1,7 @@
 from fuzzy_expert.variable import FuzzyVariable
 from ..Base.BaseVariables import BaseVariableWrapper
 
-__chemicalCompositionVariables = {
+CHEMICAL_COMPOSITION_VARIABLES = {
     "carbon": FuzzyVariable(
         universe_range=(0, 100),
         terms={
@@ -39,7 +39,8 @@ __chemicalCompositionVariables = {
 
 class ChemicalCompositionVariableWrapper(BaseVariableWrapper):
     def __init__(self):
+        global CHEMICAL_COMPOSITION_VARIABLES
         super().__init__()
 
     def set_variables(self):
-        self.__fuzzy_variables = __chemicalCompositionVariables
+        self._fuzzy_variables = CHEMICAL_COMPOSITION_VARIABLES

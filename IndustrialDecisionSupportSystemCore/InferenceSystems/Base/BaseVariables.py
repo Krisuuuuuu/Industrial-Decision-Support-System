@@ -7,7 +7,7 @@ class BaseVariableWrapper(ABC):
     def set_variables(self): pass
 
     def __init__(self):
-        self.__fuzzy_variables = None
+        self._fuzzy_variables = None
 
     def get_variables(self):
-        return self.__fuzzy_variables
+        return self._fuzzy_variables

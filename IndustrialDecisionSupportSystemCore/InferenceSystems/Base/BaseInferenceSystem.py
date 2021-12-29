@@ -9,23 +9,23 @@ class BaseInferenceSystem(ABC):
     def evaluate_results(self): pass
 
     def __init__(self, adi_model, variables, rules):
-        self.__adiModel = adi_model
-        self.__fuzzy_variables = variables
-        self.__fuzzy_rules = rules
-        self.__model = None
-        self.__init_model()
+        self._adiModel = adi_model
+        self._fuzzy_variables = variables
+        self._fuzzy_rules = rules
+        self._model = None
+        self._init_model()
 
     def return_fuzzy_model(self):
-        return self.__model
+        return self._model
 
     def return_fuzzy_variables(self):
-        return self.__fuzzy_variables
+        return self._fuzzy_variables
 
     def return_fuzzy_rules(self):
-        return self.__fuzzy_rules
+        return self._fuzzy_rules
 
-    def __init_model(self):
-        self.__model = DecompositionalInference(
+    def _init_model(self):
+        self._model = DecompositionalInference(
             and_operator="min",
             or_operator="max",
             implication_operator="Rc",

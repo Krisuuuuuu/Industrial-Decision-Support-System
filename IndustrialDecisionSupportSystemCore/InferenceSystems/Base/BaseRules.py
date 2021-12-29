@@ -7,7 +7,7 @@ class BaseRulesWrapper(ABC):
     def set_rules(self): pass
 
     def __init__(self):
-        self.__fuzzy_rules = None
+        self._fuzzy_rules = None
 
     def get_rules(self):
-        return self.__fuzzy_rules
+        return self._fuzzy_rules

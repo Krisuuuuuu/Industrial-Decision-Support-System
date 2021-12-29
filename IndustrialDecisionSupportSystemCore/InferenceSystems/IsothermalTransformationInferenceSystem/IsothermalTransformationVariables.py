@@ -1,7 +1,7 @@
 from fuzzy_expert.variable import FuzzyVariable
 from ..Base.BaseVariables import BaseVariableWrapper
 
-__isothermalTransformationVariables = {
+ISOTHERMAL_TRANSFORMATION_VARIABLES = {
     "isothermal_transformation_temperature": FuzzyVariable(
         universe_range=(0, 1000),
         terms={
@@ -27,7 +27,8 @@ __isothermalTransformationVariables = {
 
 class IsothermalTransformationVariableWrapper(BaseVariableWrapper):
     def __init__(self):
+        global ISOTHERMAL_TRANSFORMATION_VARIABLES
         super().__init__()
 
     def set_variables(self):
-        self.__fuzzy_variables = __isothermalTransformationVariables
+        self._fuzzy_variables = ISOTHERMAL_TRANSFORMATION_VARIABLES
