@@ -17,7 +17,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Unsuitable")
         ],
         consequence=[("decision", "Unsuitable")],
-    ),  
+    ),
     FuzzyRule(
         premise=[
             ("carbon", "Correct"),
@@ -33,7 +33,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Unsuitable")
         ],
         consequence=[("decision", "Average")],
-    ), 
+    ),
     FuzzyRule(
         premise=[
             ("carbon", "Unsuitable"),
@@ -49,7 +49,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Unsuitable")
         ],
         consequence=[("decision", "Unsuitable")],
-    ),  
+    ),
     FuzzyRule(
         premise=[
             ("carbon", "Unsuitable"),
@@ -81,7 +81,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Optimal")
         ],
         consequence=[("decision", "Average")],
-    ), #10    
+    ),  # 10
     FuzzyRule(
         premise=[
             ("carbon", "Average"),
@@ -161,7 +161,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Average")
         ],
         consequence=[("decision", "Average")],
-    ), # 20
+    ),  # 20
     FuzzyRule(
         premise=[
             ("carbon", "Correct"),
@@ -241,7 +241,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Correct")
         ],
         consequence=[("decision", "Correct")],
-    ), # 30
+    ),  # 30
     FuzzyRule(
         premise=[
             ("carbon", "Unsuitable"),
@@ -321,7 +321,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Optimal")
         ],
         consequence=[("decision", "Optimal")],
-    ), # 40
+    ),  # 40
     FuzzyRule(
         premise=[
             ("carbon", "Average"),
@@ -377,7 +377,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Optimal")
         ],
         consequence=[("decision", "Correct")],
-    ), 
+    ),
     FuzzyRule(
         premise=[
             ("carbon", "Correct"),
@@ -401,7 +401,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Correct")
         ],
         consequence=[("decision", "Correct")],
-    ),# 50
+    ),  # 50
     FuzzyRule(
         premise=[
             ("carbon", "Correct"),
@@ -481,7 +481,7 @@ __chemicalCompositionRules = [
             ("AND", "manganese", "Average")
         ],
         consequence=[("decision", "Correct")],
-    ), # 60
+    ),  # 60
     FuzzyRule(
         premise=[
             ("carbon", "Optimal"),
@@ -516,10 +516,10 @@ __chemicalCompositionRules = [
     )
 ]
 
-class ChemicalCompositionRulesWrapper(BaseRulesWrapper):
-    def setRules(self):
-        self.__fuzzy_rules = __chemicalCompositionRules
-    
 
-    
-    
+class ChemicalCompositionRulesWrapper(BaseRulesWrapper):
+    def __init__(self):
+        super().__init__()
+
+    def set_rules(self):
+        self.__fuzzy_rules = __chemicalCompositionRules

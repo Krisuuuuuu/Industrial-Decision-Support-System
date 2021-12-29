@@ -116,10 +116,10 @@ __isothermalTransformationRules = [
     )
 ]
 
-class IsothermalTransformationRulesWrapper:
-    def setRules(self):
-        self.__fuzzy_rules = __isothermalTransformationRules
-    
 
-    
-    
+class IsothermalTransformationRulesWrapper(BaseRulesWrapper):
+    def __init__(self):
+        super().__init__()
+
+    def set_rules(self):
+        self.__fuzzy_rules = __isothermalTransformationRules

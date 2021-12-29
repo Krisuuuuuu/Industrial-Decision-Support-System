@@ -24,10 +24,10 @@ __isothermalTransformationVariables = {
     )
 }
 
-class IsothermalTransformationVariableWrapper:
-    def setVariables(self):
+
+class IsothermalTransformationVariableWrapper(BaseVariableWrapper):
+    def __init__(self):
+        super().__init__()
+
+    def set_variables(self):
         self.__fuzzy_variables = __isothermalTransformationVariables
-
-
-
-

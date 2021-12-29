@@ -36,11 +36,10 @@ __chemicalCompositionVariables = {
     ),
 }
 
+
 class ChemicalCompositionVariableWrapper(BaseVariableWrapper):
-    def setVariables(self):
-        self.__fuzzy_variables = __chemicalCompositionVariables 
+    def __init__(self):
+        super().__init__()
 
-
-
-
-
+    def set_variables(self):
+        self.__fuzzy_variables = __chemicalCompositionVariables

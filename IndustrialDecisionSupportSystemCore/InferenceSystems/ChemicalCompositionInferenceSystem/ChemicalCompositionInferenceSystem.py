@@ -1,10 +1,11 @@
-from fuzzy_expert.inference import DecompositionalInference
+from ..Base.BaseInferenceSystem import BaseInferenceSystem
 
-class ChemicalCompositionInferenceSystem:
-    def __init__(self, adiModel, variables, rules):
-        super.__init__(adiModel, variables, rules)
 
-    def evaluateResults(self):
+class ChemicalCompositionInferenceSystem(BaseInferenceSystem):
+    def __init__(self, adi_model, variables, rules):
+        super().__init__(adi_model, variables, rules)
+
+    def evaluate_results(self):
         self.__model(
             variables=self.__returnFuzzyVariables(),
             rules=self.__returnFuzzyRules(),
@@ -12,4 +13,3 @@ class ChemicalCompositionInferenceSystem:
             silicon=self.__adiModel.silicon,
             manganese=self.__adiModel.manganese
         )
-    
