@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1b0ea78b-816e-4dc7-b562-e5bf810eb41b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/ChemicalCompositionSystemBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/ChemicalCompositionSystemBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/IsothermalTransformationSystemBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/IsothermalTransformationSystemBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Factory/Base/AbstractFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Factory/Base/AbstractFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Factory/ChemicalCompositionSystemFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Factory/ChemicalCompositionSystemFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Factory/IsothermalTransformationSystemFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Factory/IsothermalTransformationSystemFactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/Base/BaseInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/Base/BaseInferenceSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionInferenceSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionRules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionVariables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationRules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationVariables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +42,7 @@
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\IndustrialDecisionSupportSystemCore\Factory\Base" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ChemicalCompositionVariables">
+  <component name="RunManager" selected="Python.main">
     <configuration name="ChemicalCompositionVariables" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Industrial-Decision-Support-System" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,8 +87,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ChemicalCompositionVariables" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.ChemicalCompositionVariables" />
       </list>
     </recent_temporary>
   </component>
@@ -124,5 +113,28 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
