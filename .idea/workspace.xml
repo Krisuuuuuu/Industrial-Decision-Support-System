@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsRules.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsVariables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

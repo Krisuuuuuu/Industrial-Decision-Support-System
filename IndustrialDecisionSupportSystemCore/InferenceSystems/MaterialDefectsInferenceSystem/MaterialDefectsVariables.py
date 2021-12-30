@@ -23,10 +23,10 @@ MATERIAL_DEFECTS_VARIABLES = {
     "decision": FuzzyVariable(
         universe_range=(0, 10),
         terms={
-            "Unacceptable": ('trimf', 0, 0, 0),
-            "Weak": ('trapmf', 0, 0.1, 0.5, 0.6),
-            "Acceptable": ('trapmf', 0.5, 0.6, 1, 1.1),
-            "Perfect": ('trapmf', 1, 1.1, 10, 10),
+            "Unacceptable": ('trapmf', 0, 0, 25, 30),
+            "Weak": ('trapmf', 20, 25, 50, 55),
+            "Acceptable": ('trapmf', 45, 50, 75, 80),
+            "Perfect": ('trapmf', 75, 80, 100, 100),
         },
     ),
 }
