@@ -1,5 +1,6 @@
 import IndustrialDecisionSupportSystemCore.Factory.ChemicalCompositionSystemFactory as cs
 import IndustrialDecisionSupportSystemCore.Factory.IsothermalTransformationSystemFactory as it
+import IndustrialDecisionSupportSystemCore.Factory.MaterialDefectsSystemFactory as md
 
 
 class IndustrialDecisionSupportSystem:
@@ -7,6 +8,7 @@ class IndustrialDecisionSupportSystem:
         self._inference_system = None
 
     def start_evaluation(self):
+        self._evaluate_material_defects()
         self._evaluate_chemical_composition()
         self._evaluate_isothermal_transformation()
 
@@ -18,6 +20,11 @@ class IndustrialDecisionSupportSystem:
     def _evaluate_isothermal_transformation(self):
         self._dispose_inference_system()
         self._prepare_inference_system(it.IsothermalTransformationSystemFactory())
+        self._inference_system.evaluate_results()
+
+    def _evaluate_material_defects(self):
+        self._dispose_inference_system()
+        self._prepare_inference_system(md.MaterialDefectsSystemFactory())
         self._inference_system.evaluate_results()
 
     def _prepare_inference_system(self, abstract_factory):
