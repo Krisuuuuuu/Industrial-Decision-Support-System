@@ -1,7 +1,35 @@
 from fuzzy_expert.variable import FuzzyVariable
 import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseVariables as v
 
-MATERIAL_DEFECTS_VARIABLES = {}
+MATERIAL_DEFECTS_VARIABLES = {
+    "quantity": FuzzyVariable(
+        universe_range=(0, 20),
+        terms={
+            "None": ('trimf', 0, 0, 0),
+            "Little": ('trapmf', 1, 1, 4, 5),
+            "Average": ('trapmf', 4, 5, 7, 8),
+            "Many": ('trapmf', 7, 8, 20, 20),
+        },
+    ),
+    "size": FuzzyVariable(
+        universe_range=(0, 10),
+        terms={
+            "None": ('trimf', 0, 0, 0),
+            "Small": ('trapmf', 0, 0.1, 0.5, 0.6),
+            "Average": ('trapmf', 0.5, 0.6, 1, 1.1),
+            "Big": ('trapmf', 1, 1.1, 10, 10),
+        },
+    ),
+    "decision": FuzzyVariable(
+        universe_range=(0, 10),
+        terms={
+            "Unacceptable": ('trimf', 0, 0, 0),
+            "Weak": ('trapmf', 0, 0.1, 0.5, 0.6),
+            "Acceptable": ('trapmf', 0.5, 0.6, 1, 1.1),
+            "Perfect": ('trapmf', 1, 1.1, 10, 10),
+        },
+    ),
+}
 
 
 class MaterialDefectsVariableWrapper(v.BaseVariableWrapper):
