@@ -1,4 +1,5 @@
 from abc import abstractmethod, ABC
+import IndustrialDecisionSupportSystemData.AdiDuctileIronModel as m
 
 
 class Builder(ABC):
@@ -9,7 +10,8 @@ class Builder(ABC):
     def set_rules(self): pass
 
     @abstractmethod
-    def set_adi_model(self): pass
-
-    @abstractmethod
     def set_system_instance(self, adi_model, variables, rules): pass
+
+    def set_adi_model(self):
+        adi_model = m.AdiDuctileIronModel(930, 235, 3.62, 2.50, 0.45)
+        return adi_model

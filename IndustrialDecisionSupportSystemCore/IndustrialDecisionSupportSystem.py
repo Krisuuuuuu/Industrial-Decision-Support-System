@@ -8,7 +8,7 @@ class IndustrialDecisionSupportSystem:
 
     def start_evaluation(self):
         self._evaluate_chemical_composition()
-        # self._evaluate_isothermal_transformation()
+        self._evaluate_isothermal_transformation()
 
     def _evaluate_chemical_composition(self):
         self._dispose_inference_system()

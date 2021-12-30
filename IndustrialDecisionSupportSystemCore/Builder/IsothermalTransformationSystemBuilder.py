@@ -3,7 +3,6 @@ import IndustrialDecisionSupportSystemCore.InferenceSystems.IsothermalTransforma
     IsothermalTransformationVariables as v
 import IndustrialDecisionSupportSystemCore.InferenceSystems.IsothermalTransformationInferenceSystem. \
     IsothermalTransformationRules as r
-import IndustrialDecisionSupportSystemData.AdiDuctileIronModel as m
 import IndustrialDecisionSupportSystemCore.InferenceSystems.IsothermalTransformationInferenceSystem. \
     IsothermalTransformationInferenceSystem as s
 
@@ -22,10 +21,6 @@ class IsothermalTransformationInferenceSystemBuilder(b.Builder):
 
         fuzzy_rules = rules_wrapper.get_rules()
         return fuzzy_rules
-
-    def set_adi_model(self):
-        adi_model = m.AdiDuctileIronModel(915, 235, 3.60, 2.50, 0.35)
-        return adi_model
 
     def set_system_instance(self, adi_model, variables, rules):
         instance = s.IsothermalTransformationInferenceSystem(adi_model, variables, rules)
