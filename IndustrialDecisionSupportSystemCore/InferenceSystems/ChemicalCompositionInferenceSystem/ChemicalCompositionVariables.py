@@ -3,28 +3,28 @@ import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseVariables a
 
 CHEMICAL_COMPOSITION_VARIABLES = {
     "carbon": FuzzyVariable(
-        universe_range=(0, 100),
+        universe_range=(0, 10),
         terms={
-            "Unsuitable": [(0, 1), (3.39, 1), (3.40, 0), (3.80, 0), (3.81, 1), (100, 1)],
-            "Average": ('trapmf', 3.40, 3.40, 3.59, 3.59),
-            "Correct": ('trapmf', 3.61, 3.61, 3.80, 3.80),
+            "Unsuitable": [(0, 1), (3.38, 1), (3.40, 0), (3.78, 0), (3.80, 1), (100, 1)],
+            "Average": ('trapmf', 3.38, 3.40, 3.58, 3.60),
+            "Correct": ('trapmf', 3.60, 3.62, 3.78, 3.80),
             "Optimal": ('trimf', 3.60, 3.60, 3.60),
         },
     ),
     "silicon": FuzzyVariable(
-        universe_range=(0, 100),
+        universe_range=(0, 10),
         terms={
-            "Unsuitable": [(0, 1), (2.29, 1), (2.30, 0), (2.70, 0), (2.71, 1), (100, 1)],
-            "Average": ('trapmf', 2.30, 2.30, 2.49, 2.49),
-            "Correct": ('trapmf', 2.51, 2.51, 2.70, 2.70),
+            "Unsuitable": [(0, 1), (2.28, 1), (2.30, 0), (2.68, 0), (2.70, 1), (100, 1)],
+            "Average": ('trapmf', 2.30, 2.30, 2.48, 2.50),
+            "Correct": ('trapmf', 2.48, 2.50, 2.68, 2.70),
             "Optimal": ('trimf', 2.50, 2.50, 2.50),
         },
     ),
     "manganese": FuzzyVariable(
-        universe_range=(0, 100),
+        universe_range=(0, 10),
         terms={
-            "Unsuitable": [(0, 1), (0.29, 1), (0.30, 0), (0.40, 0), (0.41, 1), (100, 1)],
-            "Average": [(0.29, 0), (0.30, 1), (0.32, 1), (0.33, 0), (0.37, 0), (0.38, 1), (0.40, 1), (0.41, 0)],
+            "Unsuitable": [(0, 1), (0.29, 1), (0.30, 0), (0.39, 0), (0.40, 1), (100, 1)],
+            "Average": [(0.29, 0), (0.30, 1), (0.32, 1), (0.33, 0), (0.37, 0), (0.38, 1), (0.39, 1), (0.40, 0)],
             "Correct": [(0.32, 0), (0.33, 1), (0.34, 1), (0.35, 0), (0.36, 1), (0.37, 1), (0.38, 0)],
             "Optimal": ('trimf', 0.35, 0.35, 0.35),
         },
@@ -32,10 +32,10 @@ CHEMICAL_COMPOSITION_VARIABLES = {
     "decision": FuzzyVariable(
         universe_range=(0, 100),
         terms={
-            "Unsuitable": ('trapmf', 0, 0, 25, 25),
-            "Average": ('trapmf', 26, 26, 50, 50),
-            "Correct": ('trapmf', 51, 51, 75, 75),
-            "Optimal": ('trapmf', 76, 76, 100, 100),
+            "Unsuitable": ('trapmf', 0, 0, 25, 30),
+            "Average": ('trapmf', 20, 25, 50, 55),
+            "Correct": ('trapmf', 45, 50, 75, 80),
+            "Optimal": ('trapmf', 75, 80, 100, 100),
         },
     ),
 }

@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/IsothermalTransformationSystemBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/IsothermalTransformationSystemBuilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/ChemicalCompositionSystemBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/ChemicalCompositionSystemBuilder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/Base/BaseInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/Base/BaseInferenceSystem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionInferenceSystem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionVariables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationVariables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,14 +84,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionInferenceSystem.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
