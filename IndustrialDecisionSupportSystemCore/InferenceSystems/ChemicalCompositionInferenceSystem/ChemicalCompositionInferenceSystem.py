@@ -11,17 +11,17 @@ class ChemicalCompositionInferenceSystem(s.BaseInferenceSystem):
         self._model.plot(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
-            carbon=self._adiModel.carbon,
-            silicon=self._adiModel.silicon,
-            manganese=self._adiModel.manganese
+            carbon=self._adi_model.carbon,
+            silicon=self._adi_model.silicon,
+            manganese=self._adi_model.manganese
         )
 
         print("Chemical Composition Inference System result: ")
         print(self._model(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
-            carbon=self._adiModel.carbon,
-            silicon=self._adiModel.silicon,
-            manganese=self._adiModel.manganese
+            carbon=self._adi_model.carbon,
+            silicon=self._adi_model.silicon,
+            manganese=self._adi_model.manganese
         ))
 

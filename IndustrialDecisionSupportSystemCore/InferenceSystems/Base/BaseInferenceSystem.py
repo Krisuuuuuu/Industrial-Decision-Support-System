@@ -8,7 +8,7 @@ class BaseInferenceSystem(ABC):
     def evaluate_results(self): pass
 
     def __init__(self, adi_model, variables, rules):
-        self._adiModel = adi_model
+        self._adi_model = adi_model
         self._fuzzy_variables = variables
         self._fuzzy_rules = rules
         self._model = None

@@ -12,14 +12,14 @@ class IsothermalTransformationInferenceSystem(s.BaseInferenceSystem):
         self._model.plot(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
-            austenitizing_temperature=self._adiModel.austenitizing_temperature,
-            isothermal_transformation_temperature=self._adiModel.isothermal_transformation_temperature
+            austenitizing_temperature=self._adi_model.austenitizing_temperature,
+            isothermal_transformation_temperature=self._adi_model.isothermal_transformation_temperature
         )
 
         print("Isothermal Transformation Inference System result: ")
         print(self._model(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
-            austenitizing_temperature=self._adiModel.austenitizing_temperature,
-            isothermal_transformation_temperature=self._adiModel.isothermal_transformation_temperature
+            austenitizing_temperature=self._adi_model.austenitizing_temperature,
+            isothermal_transformation_temperature=self._adi_model.isothermal_transformation_temperature
         ))

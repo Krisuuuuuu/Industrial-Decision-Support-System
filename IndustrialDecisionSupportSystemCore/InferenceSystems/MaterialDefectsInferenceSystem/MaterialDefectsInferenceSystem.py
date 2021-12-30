@@ -12,9 +12,14 @@ class MaterialDefectsInferenceSystem(s.BaseInferenceSystem):
         self._model.plot(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
+            quantity=self._adi_model.defects_quantity,
+            size=self._adi_model.defects_size
         )
 
+        print("Material Defects Inference System result: ")
         print(self._model(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
+            quantity=self._adi_model.defects_quantity,
+            size=self._adi_model.defects_size
         ))
