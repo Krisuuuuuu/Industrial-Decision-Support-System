@@ -16,6 +16,7 @@ class ChemicalCompositionInferenceSystem(s.BaseInferenceSystem):
             manganese=self._adiModel.manganese
         )
 
+        print("Chemical Composition Inference System result: ")
         print(self._model(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),

@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseInferenceSystem as s
 
 
-class IsothermalTransformationInferenceSystem(s.BaseInferenceSystem):
+class MaterialDefectsInferenceSystem(s.BaseInferenceSystem):
     def __init__(self, adi_model, variables, rules):
         super().__init__(adi_model, variables, rules)
 
@@ -12,14 +12,9 @@ class IsothermalTransformationInferenceSystem(s.BaseInferenceSystem):
         self._model.plot(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
-            austenitizing_temperature=self._adiModel.austenitizing_temperature,
-            isothermal_transformation_temperature=self._adiModel.isothermal_transformation_temperature
         )
 
-        print("Isothermal Transformation Inference System result: ")
         print(self._model(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
-            austenitizing_temperature=self._adiModel.austenitizing_temperature,
-            isothermal_transformation_temperature=self._adiModel.isothermal_transformation_temperature
         ))

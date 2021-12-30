@@ -1,7 +1,7 @@
 from fuzzy_expert.variable import FuzzyVariable
 import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseVariables as v
 
-ISOTHERMAL_TRANSFORMATION_VARIABLES = {
+MATERIAL_DEFECTS_VARIABLES = {
     "isothermal_transformation_temperature": FuzzyVariable(
         universe_range=(0, 1000),
         terms={
@@ -34,9 +34,9 @@ ISOTHERMAL_TRANSFORMATION_VARIABLES = {
 
 class IsothermalTransformationVariableWrapper(v.BaseVariableWrapper):
     def __init__(self):
-        global ISOTHERMAL_TRANSFORMATION_VARIABLES
+        global MATERIAL_DEFECTS_VARIABLES
         super().__init__()
 
     def set_variables(self):
-        self._fuzzy_variables = ISOTHERMAL_TRANSFORMATION_VARIABLES
+        self._fuzzy_variables = MATERIAL_DEFECTS_VARIABLES
 
