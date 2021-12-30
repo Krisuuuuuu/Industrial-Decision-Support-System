@@ -30,5 +30,5 @@ class BaseInferenceSystem(ABC):
             implication_operator="Rc",
             composition_operator="max-min",
             production_link="max",
-            defuzzification_operator="cog"
+            defuzzification_operator="cog",
         )

@@ -1,3 +1,5 @@
+from matplotlib import pyplot as plt
+
 import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseInferenceSystem as s
 
 
@@ -6,9 +8,17 @@ class IsothermalTransformationInferenceSystem(s.BaseInferenceSystem):
         super().__init__(adi_model, variables, rules)
 
     def evaluate_results(self):
-        self._model(
+        plt.figure(figsize=(10, 6))
+        self._model.plot(
             variables=self.return_fuzzy_variables(),
             rules=self.return_fuzzy_rules(),
             austenitizing_temperature=self._adiModel.austenitizing_temperature,
             isothermal_transformation_temperature=self._adiModel.isothermal_transformation_temperature
         )
+
+        print(self._model(
+            variables=self.return_fuzzy_variables(),
+            rules=self.return_fuzzy_rules(),
+            austenitizing_temperature=self._adiModel.austenitizing_temperature,
+            isothermal_transformation_temperature=self._adiModel.isothermal_transformation_temperature
+        ))

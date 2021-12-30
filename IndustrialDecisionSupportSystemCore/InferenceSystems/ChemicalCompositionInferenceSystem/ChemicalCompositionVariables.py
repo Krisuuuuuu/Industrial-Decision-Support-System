@@ -33,9 +33,9 @@ CHEMICAL_COMPOSITION_VARIABLES = {
         universe_range=(0, 100),
         terms={
             "Unsuitable": ('trapmf', 0, 0, 25, 25),
-            "Optimal": ('trapmf', 26, 26, 50, 50),
+            "Average": ('trapmf', 26, 26, 50, 50),
             "Correct": ('trapmf', 51, 51, 75, 75),
-            "Average": ('trapmf', 76, 76, 100, 100),
+            "Optimal": ('trapmf', 76, 76, 100, 100),
         },
     ),
 }

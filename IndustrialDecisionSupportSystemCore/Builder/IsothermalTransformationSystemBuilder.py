@@ -24,7 +24,7 @@ class IsothermalTransformationInferenceSystemBuilder(b.Builder):
         return fuzzy_rules
 
     def set_adi_model(self):
-        adi_model = m.AdiDuctileIronModel(930, 235, 3.60, 2.50, 0.35)
+        adi_model = m.AdiDuctileIronModel(915, 235, 3.60, 2.50, 0.35)
         return adi_model
 
     def set_system_instance(self, adi_model, variables, rules):

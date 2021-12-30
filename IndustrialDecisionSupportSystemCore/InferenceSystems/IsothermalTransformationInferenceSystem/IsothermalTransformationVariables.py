@@ -5,28 +5,28 @@ ISOTHERMAL_TRANSFORMATION_VARIABLES = {
     "isothermal_transformation_temperature": FuzzyVariable(
         universe_range=(0, 1000),
         terms={
-            "Unsuitable": [(0, 1), (219, 1), (2.20, 0), (310, 0), (311, 1), (1000, 1)],
-            "Optimal": ('trapmf', 220, 220, 240, 240),
-            "Correct": ('trapmf', 241, 241, 270, 270),
-            "Average": ('trapmf', 271, 271, 310, 310),
+            "Unsuitable": [(0, 1), (215, 1), (2.20, 0), (310, 0), (315, 1), (1000, 1)],
+            "Optimal": ('trapmf', 215, 220, 235, 240),
+            "Correct": ('trapmf', 235, 240, 265, 270),
+            "Average": ('trapmf', 265, 270, 310, 315),
         },
     ),
     "austenitizing_temperature": FuzzyVariable(
-        universe_range=(0, 2000),
+        universe_range=(0, 1000),
         terms={
-            "Unsuitable": [(0, 1), (814, 1), (815, 0), (950, 0), (951, 1), (2000, 1)],
-            "Optimal": ('trapmf', 930, 930, 950, 950),
-            "Correct": ('trapmf', 900, 900, 929, 929),
-            "Average": ('trapmf', 816, 816, 899, 899),
+            "Unsuitable": [(0, 1), (810, 1), (815, 0), (945, 0), (950, 1), (1000, 1)],
+            "Optimal": ('trapmf', 925, 930, 945, 950),
+            "Correct": ('trapmf', 895, 900, 925, 930),
+            "Average": ('trapmf', 810, 815, 895, 900),
         },
     ),
     "decision": FuzzyVariable(
         universe_range=(0, 100),
         terms={
-            "Unsuitable": ('trapmf', 0, 0, 25, 25),
-            "Optimal": ('trapmf', 26, 26, 50, 50),
-            "Correct": ('trapmf', 51, 51, 75, 75),
-            "Average": ('trapmf', 76, 76, 100, 100),
+            "Unsuitable": ('trapmf', 0, 0, 25, 30),
+            "Average": ('trapmf', 20, 25, 50, 55),
+            "Correct": ('trapmf', 45, 50, 75, 80),
+            "Optimal": ('trapmf', 75, 80, 100, 100),
         },
     ),
 }
@@ -39,3 +39,4 @@ class IsothermalTransformationVariableWrapper(v.BaseVariableWrapper):
 
     def set_variables(self):
         self._fuzzy_variables = ISOTHERMAL_TRANSFORMATION_VARIABLES
+
