@@ -23,9 +23,9 @@ MATERIAL_DEFECTS_VARIABLES = {
     "decision": FuzzyVariable(
         universe_range=(0, 100),
         terms={
-            "Unsuitable": ('trapmf', 0, 0, 25, 30),
+            "Unsuitable": ('trapmf', 0, 0, 20, 25),
             "Average": ('trapmf', 20, 25, 50, 55),
-            "Correct": ('trapmf', 45, 50, 75, 80),
+            "Correct": ('trapmf', 50, 55, 75, 80),
             "Optimal": ('trapmf', 75, 80, 100, 100),
         },
     ),
