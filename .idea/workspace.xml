@@ -3,10 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/Base/Builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/Base/Builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionVariables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationVariables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsVariables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/IsothermalTransformationSystemBuilder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Builder/MaterialDefectsSystemBuilder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Factory/IsothermalTransformationSystemFactory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/Factory/MaterialDefectsSystemFactory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationRules.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationVariables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsInferenceSystem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsRules.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/MaterialDefectsInferenceSystem/MaterialDefectsVariables.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +21,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -87,11 +99,6 @@
           <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/InferenceSystems/ChemicalCompositionInferenceSystem/ChemicalCompositionInferenceSystem.py</url>
           <line>9</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/IndustrialDecisionSupportSystemCore/IndustrialDecisionSupportSystem.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
