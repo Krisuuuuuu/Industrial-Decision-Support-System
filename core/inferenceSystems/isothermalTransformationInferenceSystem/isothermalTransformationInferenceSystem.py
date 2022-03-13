@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 
-import Core.InferenceSystems.Base.BaseInferenceSystem as s
+import core.inferenceSystems.base.baseInferenceSystem as s
 
 
 class IsothermalTransformationInferenceSystem(s.BaseInferenceSystem):

@@ -1,5 +1,5 @@
 from fuzzy_expert.variable import FuzzyVariable
-import Core.InferenceSystems.Base.BaseVariables as v
+import core.inferenceSystems.base.baseVariables as v
 
 MATERIAL_DEFECTS_VARIABLES = {
     "isothermal_transformation_temperature": FuzzyVariable(

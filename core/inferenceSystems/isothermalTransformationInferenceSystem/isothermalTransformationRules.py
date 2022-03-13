@@ -1,5 +1,5 @@
 from fuzzy_expert.rule import FuzzyRule
-import Core.InferenceSystems.Base.BaseRules as r
+import core.inferenceSystems.base.baseRules as r
 
 MATERIAL_DEFECTS_RULES = [
     FuzzyRule(

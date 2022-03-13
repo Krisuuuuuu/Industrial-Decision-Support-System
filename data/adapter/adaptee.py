@@ -3,7 +3,7 @@ import pathlib
 from json import JSONDecodeError
 
 
-SRC_FILE = pathlib.Path.joinpath(pathlib.Path(__file__).parent.parent.parent, 'Resources/adiDuctileIronInfo.json')
+SRC_FILE = pathlib.Path.joinpath(pathlib.Path(__file__).parent.parent.parent, 'resources/adiDuctileIronInfo.json')
 
 
 class Adaptee:

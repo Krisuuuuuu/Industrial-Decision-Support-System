@@ -1,4 +1,4 @@
-import Core.IndustrialDecisionSupportSystem as s
+import core.industrialDecisionSupportSystem as s
 
 
 def main():

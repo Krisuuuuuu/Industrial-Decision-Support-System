@@ -1,5 +1,5 @@
-import Core.Factory.Base.AbstractFactory as af
-import Core.Builder.IsothermalTransformationSystemBuilder as b
+import core.factory.base.abstractFactory as af
+import core.builder.isothermalTransformationSystemBuilder as b
 
 
 class IsothermalTransformationSystemFactory(af.AbstractFactory):

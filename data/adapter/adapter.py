@@ -1,9 +1,9 @@
-from Data.Adapter.Adaptee import Adaptee
-from Data.Adapter.Target import Target
-from Data.Models.AdiDuctileIronModel import AdiDuctileIronModel
-from Data.Models.ChemicalComposition import ChemicalComposition
-from Data.Models.ManufacturingProcess import ManufacturingProcess
-from Data.Models.PhysicalData import PhysicalData
+from data.adapter.adaptee import Adaptee
+from data.adapter.target import Target
+from data.models.adiDuctileIronModel import AdiDuctileIronModel
+from data.models.chemicalComposition import ChemicalComposition
+from data.models.manufacturingProcess import ManufacturingProcess
+from data.models.physicalData import PhysicalData
 
 
 class Adapter(Target, Adaptee):

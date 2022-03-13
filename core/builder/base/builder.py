@@ -1,6 +1,6 @@
 from abc import abstractmethod, ABC
-import Data.Models.AdiDuctileIronModel as m
-from Data.Adapter.Adapter import Adapter
+import data.models.adiDuctileIronModel as m
+from data.adapter.adapter import Adapter
 
 
 class Builder(ABC):

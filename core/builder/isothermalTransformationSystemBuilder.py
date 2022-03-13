@@ -1,10 +1,10 @@
-import Core.Builder.Base.Builder as b
-import Core.InferenceSystems.IsothermalTransformationInferenceSystem. \
-    IsothermalTransformationVariables as v
-import Core.InferenceSystems.IsothermalTransformationInferenceSystem. \
-    IsothermalTransformationRules as r
-import Core.InferenceSystems.IsothermalTransformationInferenceSystem. \
-    IsothermalTransformationInferenceSystem as s
+import core.builder.base.builder as b
+import core.inferenceSystems.isothermalTransformationInferenceSystem. \
+    isothermalTransformationVariables as v
+import core.inferenceSystems.isothermalTransformationInferenceSystem. \
+    isothermalTransformationRules as r
+import core.inferenceSystems.isothermalTransformationInferenceSystem. \
+    isothermalTransformationInferenceSystem as s
 
 
 class IsothermalTransformationInferenceSystemBuilder(b.Builder):
