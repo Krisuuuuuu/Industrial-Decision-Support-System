@@ -1,9 +1,9 @@
-import IndustrialDecisionSupportSystemCore.Builder.Base.Builder as b
-import IndustrialDecisionSupportSystemCore.InferenceSystems.ChemicalCompositionInferenceSystem. \
+import Core.Builder.Base.Builder as b
+import Core.InferenceSystems.ChemicalCompositionInferenceSystem. \
     ChemicalCompositionVariables as v
-import IndustrialDecisionSupportSystemCore.InferenceSystems.ChemicalCompositionInferenceSystem. \
+import Core.InferenceSystems.ChemicalCompositionInferenceSystem. \
     ChemicalCompositionRules as r
-import IndustrialDecisionSupportSystemCore.InferenceSystems.ChemicalCompositionInferenceSystem. \
+import Core.InferenceSystems.ChemicalCompositionInferenceSystem. \
     ChemicalCompositionInferenceSystem as s
 
 

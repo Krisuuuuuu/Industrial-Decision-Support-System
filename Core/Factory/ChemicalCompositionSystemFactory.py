@@ -1,5 +1,5 @@
-import IndustrialDecisionSupportSystemCore.Factory.Base.AbstractFactory as af
-import IndustrialDecisionSupportSystemCore.Builder.ChemicalCompositionSystemBuilder as b
+import Core.Factory.Base.AbstractFactory as af
+import Core.Builder.ChemicalCompositionSystemBuilder as b
 
 
 class ChemicalCompositionSystemFactory(af.AbstractFactory):

@@ -1,4 +1,4 @@
-import IndustrialDecisionSupportSystemCore.Factory.ChemicalCompositionSystemFactory as cs
+import Core.Factory.ChemicalCompositionSystemFactory as cs
 
 
 class IndustrialDecisionSupportSystem:

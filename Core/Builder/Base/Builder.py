@@ -1,5 +1,6 @@
 from abc import abstractmethod, ABC
-import IndustrialDecisionSupportSystemData.AdiDuctileIronModel as m
+import Data.Models.AdiDuctileIronModel as m
+from Data.Adapter.Adapter import Adapter
 
 
 class Builder(ABC):
@@ -13,5 +14,6 @@ class Builder(ABC):
     def set_system_instance(self, adi_model, variables, rules): pass
 
     def set_adi_model(self):
-        adi_model = m.AdiDuctileIronModel(0, 0, 945, 215, 3.60, 2.30, 0.35)
+        adapter = Adapter()
+        adi_model = adapter.request()
         return adi_model

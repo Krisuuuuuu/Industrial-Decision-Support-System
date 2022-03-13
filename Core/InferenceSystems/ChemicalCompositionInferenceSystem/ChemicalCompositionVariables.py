@@ -1,5 +1,5 @@
 from fuzzy_expert.variable import FuzzyVariable
-import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseVariables as v
+import Core.InferenceSystems.Base.BaseVariables as v
 
 CHEMICAL_COMPOSITION_VARIABLES = {
     "carbon": FuzzyVariable(

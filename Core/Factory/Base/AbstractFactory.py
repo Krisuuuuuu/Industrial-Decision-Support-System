@@ -1,5 +1,5 @@
 from abc import abstractmethod, ABC
-import IndustrialDecisionSupportSystemCore.Builder.Director as d
+import Core.Builder.Director as d
 
 
 class AbstractFactory(ABC):

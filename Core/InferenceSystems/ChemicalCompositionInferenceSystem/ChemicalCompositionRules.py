@@ -1,5 +1,5 @@
 from fuzzy_expert.rule import FuzzyRule
-import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseRules as r
+import Core.InferenceSystems.Base.BaseRules as r
 
 CHEMICAL_COMPOSITION_RULES = [
     FuzzyRule(

@@ -1,5 +1,5 @@
 from matplotlib import pyplot as plt
-import IndustrialDecisionSupportSystemCore.InferenceSystems.Base.BaseInferenceSystem as s
+import Core.InferenceSystems.Base.BaseInferenceSystem as s
 
 
 class ChemicalCompositionInferenceSystem(s.BaseInferenceSystem):
