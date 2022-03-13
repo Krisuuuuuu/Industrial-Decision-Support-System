@@ -9,8 +9,7 @@ from data.models.physicalData import PhysicalData
 class Adapter(Target, Adaptee):
     def request(self):
         data = self._load_json_from_file()
-        self.adi_ductile_iron_model = self._get_adi_ductile_iron_model(data)
-        return self.adi_ductile_iron_model
+        return self._get_adi_ductile_iron_model(data)
 
     def _get_chemical_composition_data(self, json_data):
         return ChemicalComposition(

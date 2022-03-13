@@ -2,29 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Industrial-Decision-Support-System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Industrial-Decision-Support-System.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Builder/Base/Builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/builder/base/builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Builder/Director.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/builder/director.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Builder/IsothermalTransformationSystemBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/builder/isothermalTransformationSystemBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Factory/Base/AbstractFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/factory/base/abstractFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Factory/IsothermalTransformationSystemFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/factory/isothermalTransformationSystemFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/IndustrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/InferenceSystems/Base/BaseInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/base/baseInferenceSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/InferenceSystems/Base/BaseRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/base/baseRules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/InferenceSystems/Base/BaseVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/base/baseVariables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationRules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/InferenceSystems/IsothermalTransformationInferenceSystem/IsothermalTransformationVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationVariables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Adapter/Adaptee.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/adaptee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Adapter/Adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Adapter/Target.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/target.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Models/AdiDuctileIronModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/adiDuctileIronModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Models/ChemicalComposition.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/chemicalComposition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Models/ManufacturingProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/manufacturingProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Models/PhysicalData.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/models/physicalData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/ADIDuctileIronInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/adiDuctileIronInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/builder/isothermalTransformationSystemBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/builder/isothermalTransformationSystemBuilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/base/baseInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/base/baseInferenceSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/base/baseRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/base/baseRules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/base/baseVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/base/baseVariables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/adapter/adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/adapter/target.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/target.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +115,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/data/adapter/adapter.py</url>
-          <line>12</line>
+          <line>11</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

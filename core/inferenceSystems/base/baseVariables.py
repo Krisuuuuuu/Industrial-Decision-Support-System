@@ -9,5 +9,6 @@ class BaseVariableWrapper(ABC):
     def __init__(self):
         self._fuzzy_variables = None
 
-    def get_variables(self):
+    @property
+    def variables(self):
         return self._fuzzy_variables

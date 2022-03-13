@@ -9,5 +9,6 @@ class BaseRulesWrapper(ABC):
     def __init__(self):
         self._fuzzy_rules = None
 
-    def get_rules(self):
+    @property
+    def rules(self):
         return self._fuzzy_rules

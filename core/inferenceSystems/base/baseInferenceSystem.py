@@ -14,13 +14,16 @@ class BaseInferenceSystem(ABC):
         self._model = None
         self._init_model()
 
-    def return_fuzzy_model(self):
+    @property
+    def fuzzy_model(self):
         return self._model
 
-    def return_fuzzy_variables(self):
+    @property
+    def fuzzy_variables(self):
         return self._fuzzy_variables
 
-    def return_fuzzy_rules(self):
+    @property
+    def fuzzy_rules(self):
         return self._fuzzy_rules
 
     def _init_model(self):
