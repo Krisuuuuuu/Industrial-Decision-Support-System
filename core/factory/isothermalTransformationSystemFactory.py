@@ -10,4 +10,4 @@ class IsothermalTransformationSystemFactory(af.AbstractFactory):
         self._director.set_builder(b.IsothermalTransformationInferenceSystemBuilder())
         system_instance = self._director.get_system_instance()
 
-        return  system_instance
+        return system_instance

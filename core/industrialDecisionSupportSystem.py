@@ -3,7 +3,8 @@ class IndustrialDecisionSupportSystem:
     def __init__(self):
         self._inference_system = None
 
-    def start_evaluation(self):
+    @staticmethod
+    def start_evaluation():
         print("test")
 
     def _prepare_inference_system(self, abstract_factory):
