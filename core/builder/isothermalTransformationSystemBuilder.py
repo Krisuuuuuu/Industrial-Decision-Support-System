@@ -12,14 +12,14 @@ class IsothermalTransformationInferenceSystemBuilder(b.Builder):
         variables_wrapper = v.IsothermalTransformationVariableWrapper()
         variables_wrapper.set_variables()
 
-        fuzzy_variables = variables_wrapper.variables()
+        fuzzy_variables = variables_wrapper.variables
         return fuzzy_variables
 
     def set_rules(self):
         rules_wrapper = r.IsothermalTransformationRulesWrapper()
         rules_wrapper.set_rules()
 
-        fuzzy_rules = rules_wrapper.rules()
+        fuzzy_rules = rules_wrapper.rules
         return fuzzy_rules
 
     def set_system_instance(self, adi_model, variables, rules):

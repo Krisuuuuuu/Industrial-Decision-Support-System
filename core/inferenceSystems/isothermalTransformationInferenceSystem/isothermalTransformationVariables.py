@@ -2,31 +2,31 @@ from fuzzy_expert.variable import FuzzyVariable
 import core.inferenceSystems.base.baseVariables as v
 
 MATERIAL_DEFECTS_VARIABLES = {
-    "isothermal_transformation_temperature": FuzzyVariable(
-        universe_range=(0, 1000),
+    "isothermal_transformation_time": FuzzyVariable(
+        universe_range=(0, 24),
         terms={
-            "Unsuitable": [(0, 1), (215, 1), (2.20, 0), (310, 0), (315, 1), (1000, 1)],
-            "Optimal": ('trapmf', 215, 220, 235, 240),
-            "Correct": ('trapmf', 235, 240, 265, 270),
-            "Average": ('trapmf', 265, 270, 310, 315),
+            "Unsuitable": [(0, 1), (0.2, 1), (0.25, 0), (2.95, 0), (3.0, 1), (24, 1)],
+            "Very_Short": ('trapmf', 0.20, 0.25, 0.45, 0.5),
+            "Short": ('trapmf', 0.45, 0.5, 0.95, 1),
+            "Medium": ('trapmf', 0.95, 1, 1.45, 1.5),
+            "Long": ('trapmf', 1.45, 1.5, 1.95, 2),
+            "Very_Long": ('trapmf', 1.95, 2, 2.95, 3),
         },
     ),
-    "austenitizing_temperature": FuzzyVariable(
-        universe_range=(0, 1000),
+    "wall_thickness": FuzzyVariable(
+        universe_range=(0, 100),
         terms={
-            "Unsuitable": [(0, 1), (810, 1), (815, 0), (945, 0), (950, 1), (1000, 1)],
-            "Optimal": ('trapmf', 925, 930, 945, 950),
-            "Correct": ('trapmf', 895, 900, 925, 930),
-            "Average": ('trapmf', 810, 815, 895, 900),
+            "Small": ('trapmf', 0, 1, 12, 13),
+            "Medium": ('trapmf', 12, 13, 49, 50),
+            "High": ('trapmf', 49, 50, 100, 100),
         },
     ),
     "decision": FuzzyVariable(
         universe_range=(0, 100),
         terms={
-            "Unsuitable": ('trapmf', 0, 0, 20, 25),
-            "Average": ('trapmf', 20, 25, 50, 55),
-            "Correct": ('trapmf', 50, 55, 75, 80),
-            "Optimal": ('trapmf', 75, 80, 100, 100),
+            "Unsuitable": ('trapmf', 0, 0, 33, 36),
+            "Average": ('trapmf', 33, 36, 64, 67),
+            "Optimal": ('trapmf', 64, 67, 100, 100)
         },
     ),
 }

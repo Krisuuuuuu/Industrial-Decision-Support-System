@@ -34,7 +34,7 @@ class Adapter(Target, Adaptee):
             json_data['physicalData']['expectedSpecies'])
 
     @staticmethod
-    def _get_adi_ductile_iron_model(self, json_data):
+    def _get_adi_ductile_iron_model( json_data):
         chemical_composition = Adapter._get_chemical_composition_data(json_data)
         manufacturing_process = Adapter._get_manufacturing_process_data(json_data)
         physical_data = Adapter._get_physical_data(json_data)
