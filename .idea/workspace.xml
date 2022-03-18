@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/builder/isothermalTransformationSystemBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/builder/isothermalTransformationSystemBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationRules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationVariables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/adapter/adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +42,17 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/validators" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators" />
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\base" />
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\physicalData" />
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\general" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\base" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\Resources" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\Data\Adapter" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\IndustrialDecisionSupportSystemData\Models" />

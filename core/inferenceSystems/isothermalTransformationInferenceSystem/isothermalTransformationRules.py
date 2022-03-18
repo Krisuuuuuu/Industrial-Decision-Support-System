@@ -1,7 +1,7 @@
 from fuzzy_expert.rule import FuzzyRule
 import core.inferenceSystems.base.baseRules as r
 
-MATERIAL_DEFECTS_RULES = [
+ISOTHERMAL_TRANSFORMATION_RULES = [
     FuzzyRule(
         premise=[
             ("wall_thickness", "Small"),
@@ -133,8 +133,8 @@ MATERIAL_DEFECTS_RULES = [
 
 class IsothermalTransformationRulesWrapper(r.BaseRulesWrapper):
     def __init__(self):
-        global MATERIAL_DEFECTS_RULES
+        global ISOTHERMAL_TRANSFORMATION_RULES
         super().__init__()
 
     def set_rules(self):
-        self._fuzzy_rules = MATERIAL_DEFECTS_RULES
+        self._fuzzy_rules = ISOTHERMAL_TRANSFORMATION_RULES
