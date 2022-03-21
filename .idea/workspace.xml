@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/builder/austenitizationProcessSystemBuilder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/factory/austenitizationProcessSystemFactory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessInferenceSystem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessRules.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessVariables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/builder/chemicalCompositionSystemBuilder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/factory/chemicalCompositionSystemFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionInferenceSystem.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionRules.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionVariables.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/builder/isothermalTransformationSystemBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/builder/isothermalTransformationSystemBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/factory/isothermalTransformationSystemFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/factory/isothermalTransformationSystemFactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessRules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessVariables.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationRules.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationVariables.py" afterDir="false" />
     </list>
@@ -58,9 +57,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\factory" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\builder" />
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\inferenceSystems\chemicalCompositionInferenceSystem" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\inferenceSystems\austenitizationProcessInferenceSystem" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators" />
-      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\base" />
@@ -130,7 +129,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="self.fuzzy_variables['wall_thickness']" />
+        <watch expression="self._inference_system" />
       </configuration>
     </watches-manager>
   </component>

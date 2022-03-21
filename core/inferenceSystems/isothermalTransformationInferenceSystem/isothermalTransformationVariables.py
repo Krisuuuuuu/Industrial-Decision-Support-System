@@ -2,7 +2,7 @@ from fuzzy_expert.variable import FuzzyVariable
 
 from core.inferenceSystems.base.baseVariables import BaseVariableWrapper
 
-AUSTENITIZATION_PROCESS_VARIABLES = {
+ISOTHERMAL_TRANSFORMATION_VARIABLES = {
     "isothermal_transformation_time": FuzzyVariable(
         universe_range=(0, 24),
         terms={
@@ -35,9 +35,9 @@ AUSTENITIZATION_PROCESS_VARIABLES = {
 
 class IsothermalTransformationVariableWrapper(BaseVariableWrapper):
     def __init__(self):
-        global AUSTENITIZATION_PROCESS_VARIABLES
+        global ISOTHERMAL_TRANSFORMATION_VARIABLES
         super().__init__()
 
     def set_variables(self):
-        self._fuzzy_variables = AUSTENITIZATION_PROCESS_VARIABLES
+        self._fuzzy_variables = ISOTHERMAL_TRANSFORMATION_VARIABLES
 

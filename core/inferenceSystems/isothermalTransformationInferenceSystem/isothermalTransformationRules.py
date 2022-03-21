@@ -2,7 +2,7 @@ from fuzzy_expert.rule import FuzzyRule
 
 from core.inferenceSystems.base.baseRules import BaseRulesWrapper
 
-AUSTENITIZATION_PROCESS_RULES = [
+ISOTHERMAL_TRANSFORMATION_RULES = [
     FuzzyRule(
         premise=[
             ("wall_thickness", "Small"),
@@ -134,8 +134,8 @@ AUSTENITIZATION_PROCESS_RULES = [
 
 class IsothermalTransformationRulesWrapper(BaseRulesWrapper):
     def __init__(self):
-        global AUSTENITIZATION_PROCESS_RULES
+        global ISOTHERMAL_TRANSFORMATION_RULES
         super().__init__()
 
     def set_rules(self):
-        self._fuzzy_rules = AUSTENITIZATION_PROCESS_RULES
+        self._fuzzy_rules = ISOTHERMAL_TRANSFORMATION_RULES

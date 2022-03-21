@@ -1,7 +1,7 @@
 from fuzzy_expert.rule import FuzzyRule
 import core.inferenceSystems.base.baseRules as r
 
-AUSTENITIZATION_PROCESS_RULES = [
+AUSTENIZATION_PROCESS_RULES = [
     FuzzyRule(
         premise=[
             ("wall_thickness", "Small"),
@@ -133,8 +133,8 @@ AUSTENITIZATION_PROCESS_RULES = [
 
 class AustenitizationProcessRulesWrapper(r.BaseRulesWrapper):
     def __init__(self):
-        global AUSTENITIZATION_PROCESS_RULES
+        global AUSTENIZATION_PROCESS_RULES
         super().__init__()
 
     def set_rules(self):
-        self._fuzzy_rules = AUSTENITIZATION_PROCESS_RULES
+        self._fuzzy_rules = AUSTENIZATION_PROCESS_RULES
