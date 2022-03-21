@@ -1,4 +1,5 @@
 from adapter import Adapter
+from core.factory.austenitizationProcessSystemFactory import AustenitizationProcessSystemFactory
 from core.factory.isothermalTransformationSystemFactory import IsothermalTransformationSystemFactory
 from core.validators.generalValidatorRunner import GeneralValidatorRunner
 
@@ -17,10 +18,16 @@ class IndustrialDecisionSupportSystem:
 
     def start_evaluation(self):
         self._run_general_validators()
+        self._evaluate_austenitization_process()
         self._evaluate_isothermal_transformation()
 
     def _run_general_validators(self):
         self._general_validator_runner.run()
+
+    def _evaluate_austenitization_process(self):
+        self._dispose_inference_system()
+        self._prepare_inference_system(AustenitizationProcessSystemFactory(self._adi_model))
+        self._inference_system.evaluate_results()
 
     def _evaluate_isothermal_transformation(self):
         self._dispose_inference_system()

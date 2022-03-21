@@ -1,17 +1,16 @@
 from fuzzy_expert.variable import FuzzyVariable
-
-from core.inferenceSystems.base.baseVariables import BaseVariableWrapper
+import core.inferenceSystems.base.baseVariables as v
 
 AUSTENITIZATION_PROCESS_VARIABLES = {
-    "isothermal_transformation_time": FuzzyVariable(
+    "austenitization_process_time": FuzzyVariable(
         universe_range=(0, 24),
         terms={
-            "Unsuitable": [(0, 1), (0.2, 1), (0.25, 0), (2.95, 0), (3.0, 1), (24, 1)],
-            "Very_Short": ('trapmf', 0.20, 0.25, 0.45, 0.5),
-            "Short": ('trapmf', 0.45, 0.5, 0.95, 1),
-            "Medium": ('trapmf', 0.95, 1, 1.45, 1.5),
-            "Long": ('trapmf', 1.45, 1.5, 1.95, 2),
-            "Very_Long": ('trapmf', 1.95, 2, 2.95, 3),
+            "Unsuitable": [(0, 1), (0.45, 1), (0.5, 0), (3.95, 0), (4.0, 1), (24, 1)],
+            "Very_Short": ('trapmf', 0.45, 0.5, 0.95, 1.0),
+            "Short": ('trapmf', 0.95, 1.0, 1.45, 1.5),
+            "Medium": ('trapmf', 1.45, 1.5, 1.95, 2.0),
+            "Long": ('trapmf', 1.95, 2, 2.45, 2.5),
+            "Very_Long": ('trapmf', 2.45, 2.5, 3.95, 4),
         },
     ),
     "wall_thickness": FuzzyVariable(
@@ -33,7 +32,7 @@ AUSTENITIZATION_PROCESS_VARIABLES = {
 }
 
 
-class IsothermalTransformationVariableWrapper(BaseVariableWrapper):
+class AustenitizationProcessVariableWrapper(v.BaseVariableWrapper):
     def __init__(self):
         global AUSTENITIZATION_PROCESS_VARIABLES
         super().__init__()

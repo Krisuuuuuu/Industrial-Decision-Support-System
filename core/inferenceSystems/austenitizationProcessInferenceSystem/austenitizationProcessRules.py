@@ -1,138 +1,137 @@
 from fuzzy_expert.rule import FuzzyRule
-
-from core.inferenceSystems.base.baseRules import BaseRulesWrapper
+import core.inferenceSystems.base.baseRules as r
 
 AUSTENITIZATION_PROCESS_RULES = [
     FuzzyRule(
         premise=[
             ("wall_thickness", "Small"),
-            ("AND", "isothermal_transformation_time", "Unsuitable")
+            ("AND", "austenitization_process_time", "Unsuitable")
         ],
         consequence=[("decision", "Unsuitable")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "Medium"),
-            ("AND", "isothermal_transformation_time", "Unsuitable")
+            ("AND", "austenitization_process_time", "Unsuitable")
         ],
         consequence=[("decision", "Unsuitable")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "High"),
-            ("AND", "isothermal_transformation_time", "Unsuitable")
+            ("AND", "austenitization_process_time", "Unsuitable")
         ],
         consequence=[("decision", "Unsuitable")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "Small"),
-            ("AND", "isothermal_transformation_time", "Very_Short")
+            ("AND", "austenitization_process_time", "Very_Short")
         ],
         consequence=[("decision", "Optimal")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "Medium"),
-            ("AND", "isothermal_transformation_time", "Very_Short")
+            ("AND", "austenitization_process_time", "Very_Short")
         ],
-        consequence=[("decision", "Average")],
+        consequence=[("decision", "Optimal")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "High"),
-            ("AND", "isothermal_transformation_time", "Very_Short")
+            ("AND", "austenitization_process_time", "Very_Short")
         ],
         consequence=[("decision", "Unsuitable")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "Small"),
-            ("AND", "isothermal_transformation_time", "Short")
-        ],
-        consequence=[("decision", "Optimal")],
-    ),
-    FuzzyRule(
-        premise=[
-            ("wall_thickness", "Medium"),
-            ("AND", "isothermal_transformation_time", "Short")
-        ],
-        consequence=[("decision", "Optimal")],
-    ),
-    FuzzyRule(
-        premise=[
-            ("wall_thickness", "High"),
-            ("AND", "isothermal_transformation_time", "Short")
-        ],
-        consequence=[("decision", "Average")],
-    ),
-    FuzzyRule(
-        premise=[
-            ("wall_thickness", "Small"),
-            ("AND", "isothermal_transformation_time", "Medium")
-        ],
-        consequence=[("decision", "Optimal")],
-    ),
-    FuzzyRule(
-        premise=[
-            ("wall_thickness", "Medium"),
-            ("AND", "isothermal_transformation_time", "Medium")
-        ],
-        consequence=[("decision", "Optimal")],
-    ),
-    FuzzyRule(
-        premise=[
-            ("wall_thickness", "High"),
-            ("AND", "isothermal_transformation_time", "Medium")
-        ],
-        consequence=[("decision", "Optimal")],
-    ),
-    FuzzyRule(
-        premise=[
-            ("wall_thickness", "Small"),
-            ("AND", "isothermal_transformation_time", "Long")
+            ("AND", "austenitization_process_time", "Short")
         ],
         consequence=[("decision", "Average")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "Medium"),
-            ("AND", "isothermal_transformation_time", "Long")
+            ("AND", "austenitization_process_time", "Short")
         ],
         consequence=[("decision", "Optimal")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "High"),
-            ("AND", "isothermal_transformation_time", "Long")
+            ("AND", "austenitization_process_time", "Short")
         ],
-        consequence=[("decision", "Optimal")],
+        consequence=[("decision", "Unsuitable")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "Small"),
-            ("AND", "isothermal_transformation_time", "Very_Long")
+            ("AND", "austenitization_process_time", "Medium")
         ],
         consequence=[("decision", "Unsuitable")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "Medium"),
-            ("AND", "isothermal_transformation_time", "Very_Long")
+            ("AND", "austenitization_process_time", "Medium")
+        ],
+        consequence=[("decision", "Optimal")],
+    ),
+    FuzzyRule(
+        premise=[
+            ("wall_thickness", "High"),
+            ("AND", "austenitization_process_time", "Medium")
+        ],
+        consequence=[("decision", "Average")],
+    ),
+    FuzzyRule(
+        premise=[
+            ("wall_thickness", "Small"),
+            ("AND", "austenitization_process_time", "Long")
+        ],
+        consequence=[("decision", "Unsuitable")],
+    ),
+    FuzzyRule(
+        premise=[
+            ("wall_thickness", "Medium"),
+            ("AND", "austenitization_process_time", "Long")
         ],
         consequence=[("decision", "Average")],
     ),
     FuzzyRule(
         premise=[
             ("wall_thickness", "High"),
-            ("AND", "isothermal_transformation_time", "Very_Long")
+            ("AND", "austenitization_process_time", "Long")
+        ],
+        consequence=[("decision", "Optimal")],
+    ),
+    FuzzyRule(
+        premise=[
+            ("wall_thickness", "Small"),
+            ("AND", "austenitization_process_time", "Very_Long")
+        ],
+        consequence=[("decision", "Unsuitable")],
+    ),
+    FuzzyRule(
+        premise=[
+            ("wall_thickness", "Medium"),
+            ("AND", "austenitization_process_time", "Very_Long")
+        ],
+        consequence=[("decision", "Unsuitable")],
+    ),
+    FuzzyRule(
+        premise=[
+            ("wall_thickness", "High"),
+            ("AND", "austenitization_process_time", "Very_Long")
         ],
         consequence=[("decision", "Optimal")],
     ),
 ]
 
 
-class IsothermalTransformationRulesWrapper(BaseRulesWrapper):
+class AustenitizationProcessRulesWrapper(r.BaseRulesWrapper):
     def __init__(self):
         global AUSTENITIZATION_PROCESS_RULES
         super().__init__()
