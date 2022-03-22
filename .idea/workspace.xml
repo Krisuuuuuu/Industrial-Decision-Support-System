@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/builder/chemicalCompositionSystemBuilder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/factory/chemicalCompositionSystemFactory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionInferenceSystem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionRules.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionVariables.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessRules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessVariables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationRules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationVariables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionRules.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionRules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionVariables.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionVariables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

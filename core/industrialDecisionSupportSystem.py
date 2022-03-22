@@ -19,6 +19,7 @@ class IndustrialDecisionSupportSystem:
 
     def start_evaluation(self):
         self._run_general_validators()
+        self._evaluate_chemical_composition()
         self._evaluate_austenitization_process()
         self._evaluate_isothermal_transformation()
 
