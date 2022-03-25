@@ -1,23 +1,25 @@
 from abc import abstractmethod, ABC
 
+from core.validators.base.models.errorAreaEnum import ErrorArea
+from core.validators.base.models.errorTypeEnum import ErrorType
+from data.models.adiDuctileIronModel import AdiDuctileIronModel
+
 
 class BaseValidator(ABC):
-    def __init__(self, error_area, error_type, name, model):
-        self.ErrorArea = error_area
-        self.ErrorType = error_type
-        self._name = name
-        self._model = model
-        self._occurs = False
+    def __init__(self, error_area: ErrorArea, error_type: ErrorType, name: str, model: AdiDuctileIronModel):
+        self.ErrorArea: ErrorArea = error_area
+        self.ErrorType: ErrorType = error_type
+        self._name: str = name
+        self._model: AdiDuctileIronModel = model
+        self._occurs: bool = False
 
     @abstractmethod
-    def validate(self): pass
+    def validate(self) -> None: pass
 
     @property
-    def name(self):
+    def name(self) -> str:
         return self._name
 
     @property
-    def occurs(self):
+    def occurs(self) -> bool:
         return self._occurs
-
-

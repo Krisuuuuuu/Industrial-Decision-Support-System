@@ -1,13 +1,16 @@
+from fuzzy_expert.rule import FuzzyRule
+from fuzzy_expert.variable import FuzzyVariable
 from matplotlib import pyplot as plt
 
 from core.inferenceSystems.base.baseInferenceSystem import BaseInferenceSystem
+from data.models.adiDuctileIronModel import AdiDuctileIronModel
 
 
 class ChemicalCompositionInferenceSystem(BaseInferenceSystem):
-    def __init__(self, adi_model, variables, rules):
+    def __init__(self, adi_model: AdiDuctileIronModel, variables: dict[str, FuzzyVariable], rules: list[FuzzyRule]):
         super().__init__(adi_model, variables, rules)
 
-    def evaluate_results(self):
+    def evaluate_results(self) -> None:
         plt.figure(figsize=(10, 6))
         self._model.plot(
             variables=self.fuzzy_variables,

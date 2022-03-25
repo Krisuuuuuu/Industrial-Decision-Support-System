@@ -1,3 +1,4 @@
+from core.validators.base.baseValidator import BaseValidator
 from core.validators.base.validatorRunner import BaseValidatorRunner
 from core.validators.chemicalComposition.carbonValueValidator import CarbonValueValidator
 from core.validators.chemicalComposition.magnesiumValueValidator import MagnesiumValueValidator
@@ -12,13 +13,14 @@ from core.validators.manufacturingProcess.isothermalTransformationTimeValueValid
     IsothermalTransformationTimeValueValidator
 from core.validators.physicalData.expectedSpeciesValueValidator import ExpectedSpeciesValueValidator
 from core.validators.physicalData.wallThicknessValueValidator import WallThicknessValueValidator
+from data.models.adiDuctileIronModel import AdiDuctileIronModel
 
 
 class GeneralValidatorRunner(BaseValidatorRunner):
-    def __init__(self, model):
+    def __init__(self, model: AdiDuctileIronModel):
         super().__init__(model)
 
-    def _initValidators(self):
+    def _initValidators(self) -> list[BaseValidator]:
         return [
             CarbonValueValidator(self._model),
             MagnesiumValueValidator(self._model),
@@ -32,7 +34,7 @@ class GeneralValidatorRunner(BaseValidatorRunner):
             WallThicknessValueValidator(self._model),
         ]
 
-    def print_failed_validators(self):
+    def print_failed_validators(self) -> None:
         print("Failed general validators: ")
         super().print_failed_validators()
         print("\n")

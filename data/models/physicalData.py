@@ -1,4 +1,4 @@
 class PhysicalData:
-    def __init__(self, wall_thickness, expected_species):
-        self.wall_thickness = wall_thickness
-        self.expected_species = expected_species
+    def __init__(self, wall_thickness: float, expected_species: str):
+        self.wall_thickness: float = wall_thickness
+        self.expected_species: str = expected_species

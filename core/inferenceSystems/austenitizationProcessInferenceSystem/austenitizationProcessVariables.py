@@ -1,7 +1,7 @@
 from fuzzy_expert.variable import FuzzyVariable
 import core.inferenceSystems.base.baseVariables as v
 
-AUSTENIZATION_PROCESS_VARIABLES = {
+AUSTENIZATION_PROCESS_VARIABLES: dict[str, FuzzyVariable] = {
     "austenitization_process_time": FuzzyVariable(
         universe_range=(0, 24),
         terms={
@@ -37,6 +37,5 @@ class AustenitizationProcessVariableWrapper(v.BaseVariableWrapper):
         global AUSTENIZATION_PROCESS_VARIABLES
         super().__init__()
 
-    def set_variables(self):
+    def set_variables(self) -> None:
         self._fuzzy_variables = AUSTENIZATION_PROCESS_VARIABLES
-

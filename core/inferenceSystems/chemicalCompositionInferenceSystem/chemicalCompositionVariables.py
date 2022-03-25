@@ -2,12 +2,13 @@ from fuzzy_expert.variable import FuzzyVariable
 
 from core.inferenceSystems.base.baseVariables import BaseVariableWrapper
 
-CHEMICAL_COMPOSITION_VARIABLES = {
+CHEMICAL_COMPOSITION_VARIABLES: dict[str, FuzzyVariable] = {
     "carbon": FuzzyVariable(
         universe_range=(0, 100),
         terms={
             "Unsuitable": [(0, 1), (0.1, 1), (0.15, 0), (3.85, 0), (3.9, 1), (100, 1)],
-            "Average": [(0, 0), (0.1, 0), (0.15, 1), (3.25, 1), (3.3, 0), (3.75, 0), (3.8, 1), (3.85, 1), (3.9, 0), (100, 0)],
+            "Average": [(0, 0), (0.1, 0), (0.15, 1), (3.25, 1), (3.3, 0), (3.75, 0), (3.8, 1), (3.85, 1), (3.9, 0),
+                        (100, 0)],
             "Optimal": ('trapmf', 3.25, 3.3, 3.75, 3.8),
         },
     ),
@@ -23,7 +24,8 @@ CHEMICAL_COMPOSITION_VARIABLES = {
         universe_range=(0, 100),
         terms={
             "Unsuitable": [(0, 1), (0.25, 1), (0.3, 0), (0.85, 0), (0.9, 1), (100, 1)],
-            "Average": [(0, 0), (0.29, 0), (0.3, 1), (0.34, 1), (0.35, 0), (0.74, 0), (0.75, 1), (0.9, 1), (0.91, 0), (100, 0)],
+            "Average": [(0, 0), (0.29, 0), (0.3, 1), (0.34, 1), (0.35, 0), (0.74, 0), (0.75, 1), (0.9, 1), (0.91, 0),
+                        (100, 0)],
             "Optimal": ('trapmf', 0.34, 0.35, 0.74, 0.75),
         },
     ),
@@ -53,6 +55,5 @@ class ChemicalCompositionVariableWrapper(BaseVariableWrapper):
         global CHEMICAL_COMPOSITION_VARIABLES
         super().__init__()
 
-    def set_variables(self):
+    def set_variables(self) -> None:
         self._fuzzy_variables = CHEMICAL_COMPOSITION_VARIABLES
-

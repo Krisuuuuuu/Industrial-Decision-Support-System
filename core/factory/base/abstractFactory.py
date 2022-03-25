@@ -1,11 +1,14 @@
 from abc import abstractmethod, ABC
-import core.builder.director as d
+
+from core.builder.director import Director
+from core.inferenceSystems.base.baseInferenceSystem import BaseInferenceSystem
+from data.models.adiDuctileIronModel import AdiDuctileIronModel
 
 
 class AbstractFactory(ABC):
     @abstractmethod
-    def create(self): pass
+    def create(self) -> BaseInferenceSystem: pass
 
-    def __init__(self, model):
-        self._director = d.Director()
-        self._model = model
+    def __init__(self, model: AdiDuctileIronModel):
+        self._director: Director = Director()
+        self._model: AdiDuctileIronModel = model

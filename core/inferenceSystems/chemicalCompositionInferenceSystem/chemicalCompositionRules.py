@@ -2,7 +2,7 @@ from fuzzy_expert.rule import FuzzyRule
 
 from core.inferenceSystems.base.baseRules import BaseRulesWrapper
 
-CHEMICAL_COMPOSITION_RULES = [
+CHEMICAL_COMPOSITION_RULES: list[FuzzyRule] = [
     FuzzyRule(
         premise=[
             ("carbon", "Unsuitable"),
@@ -757,5 +757,5 @@ class ChemicalCompositionRulesWrapper(BaseRulesWrapper):
         global CHEMICAL_COMPOSITION_RULES
         super().__init__()
 
-    def set_rules(self):
+    def set_rules(self) -> None:
         self._fuzzy_rules = CHEMICAL_COMPOSITION_RULES
