@@ -9,9 +9,10 @@ class BaseValidatorRunner(ABC):
     @abstractmethod
     def _initValidators(self): pass
 
-    @abstractmethod
-    def run(self): pass
-
     @property
     def validators(self):
         return self._validators
+
+    def run(self):
+        for validator in self.validators:
+            validator.validate()

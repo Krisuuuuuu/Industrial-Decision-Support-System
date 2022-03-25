@@ -31,7 +31,3 @@ class GeneralValidatorRunner(BaseValidatorRunner):
             ExpectedSpeciesValueValidator(self._model),
             WallThicknessValueValidator(self._model),
         ]
-
-    def run(self):
-        for validator in self.validators:
-            validator.validate()

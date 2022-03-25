@@ -1,6 +1,6 @@
 from core.validators.base.baseValidator import BaseValidator
-from core.validators.base.errorArea import ErrorArea
-from core.validators.base.errotType import ErrorType
+from core.validators.base.models.errorAreaEnum import ErrorArea
+from core.validators.base.models.errorTypeEnum import ErrorType
 
 
 class AustenitizationTemperatureValueValidator(BaseValidator):
