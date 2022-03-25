@@ -12,3 +12,12 @@ class BaseValidator(ABC):
     @abstractmethod
     def validate(self): pass
 
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def occurs(self):
+        return self._occurs
+
+

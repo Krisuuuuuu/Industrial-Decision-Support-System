@@ -27,3 +27,4 @@ class ChemicalCompositionInferenceSystem(BaseInferenceSystem):
             magnesium=self._adi_model.chemical_composition.magnesium,
             sulfur=self._adi_model.chemical_composition.sulfur
         ))
+        print("\n")

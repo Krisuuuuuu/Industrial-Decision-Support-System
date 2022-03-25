@@ -31,3 +31,8 @@ class ExpectedSpeciesValidatorRunner(BaseValidatorRunner):
             return Species(DuctileIronSpecies.GJS_1400_1, 890, 950, 270, 290)
         else:
             return None
+
+    def print_failed_validators(self):
+        print("Failed expected species validators: ")
+        super().print_failed_validators()
+        print("\n")

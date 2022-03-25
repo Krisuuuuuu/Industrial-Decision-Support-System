@@ -31,3 +31,8 @@ class GeneralValidatorRunner(BaseValidatorRunner):
             ExpectedSpeciesValueValidator(self._model),
             WallThicknessValueValidator(self._model),
         ]
+
+    def print_failed_validators(self):
+        print("Failed general validators: ")
+        super().print_failed_validators()
+        print("\n")

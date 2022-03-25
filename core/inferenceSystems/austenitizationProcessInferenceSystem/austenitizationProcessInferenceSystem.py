@@ -23,3 +23,4 @@ class AustenitizationProcessInferenceSystem(s.BaseInferenceSystem):
             austenitization_process_time=self._adi_model.manufacturing_process.austenitization_time,
             wall_thickness=self._adi_model.physical_data.wall_thickness
         ))
+        print("\n")

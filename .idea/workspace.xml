@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/core/validators/expectedSpecies/expectedSpeciesAustenitizationTemperatureValidator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/validators/expectedSpecies/expectedSpeciesIsothermalTransformationTemperatureValidator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/validators/expectedSpecies/models/ductileIronSpeciesEnum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/validators/expectedSpecies/models/species.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/validators/expectedSpeciesValidatorRunner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/base/errorArea.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/base/models/errorAreaEnum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/base/errotType.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/base/models/errorTypeEnum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/austenitizationProcessInferenceSystem/austenitizationProcessInferenceSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/chemicalCompositionInferenceSystem/chemicalCompositionInferenceSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/inferenceSystems/isothermalTransformationInferenceSystem/isothermalTransformationInferenceSystem.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/validators/base/baseValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/base/baseValidator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/validators/base/validatorRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/base/validatorRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/chemicalComposition/carbonValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/chemicalComposition/carbonValueValidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/chemicalComposition/magnesiumValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/chemicalComposition/magnesiumValueValidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/chemicalComposition/siliconValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/chemicalComposition/siliconValueValidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/chemicalComposition/sulfurValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/chemicalComposition/sulfurValueValidator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/validators/expectedSpeciesValidatorRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/expectedSpeciesValidatorRunner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/validators/generalValidatorRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/generalValidatorRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/manufacturingProcess/austenitizationTemperatureValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/manufacturingProcess/austenitizationTemperatureValueValidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/manufacturingProcess/austenitizationTimeValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/manufacturingProcess/austenitizationTimeValueValidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/manufacturingProcess/isothermalTransformationTemperatureValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/manufacturingProcess/isothermalTransformationTemperatureValueValidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/manufacturingProcess/isothermalTransformationTimeValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/manufacturingProcess/isothermalTransformationTimeValueValidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/physicalData/expectedSpeciesValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/physicalData/expectedSpeciesValueValidator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/validators/physicalData/wallThicknessValueValidator.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/validators/physicalData/wallThicknessValueValidator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,11 +123,21 @@
           <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/validators/generalValidatorRunner.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/validators/expectedSpeciesValidatorRunner.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="self._inference_system" />
+        <watch expression="self._inference_system" language="Python" />
       </configuration>
     </watches-manager>
   </component>

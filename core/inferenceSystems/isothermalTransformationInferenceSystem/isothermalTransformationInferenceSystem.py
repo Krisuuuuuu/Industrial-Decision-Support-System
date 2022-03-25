@@ -23,3 +23,4 @@ class IsothermalTransformationInferenceSystem(BaseInferenceSystem):
             isothermal_transformation_time=self._adi_model.manufacturing_process.isothermal_transformation_time,
             wall_thickness=self._adi_model.physical_data.wall_thickness
         ))
+        print("\n")
