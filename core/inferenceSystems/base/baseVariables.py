@@ -4,7 +4,6 @@ from fuzzy_expert.variable import FuzzyVariable
 
 
 class BaseVariableWrapper(ABC):
-
     @abstractmethod
     def set_variables(self) -> None: pass
 

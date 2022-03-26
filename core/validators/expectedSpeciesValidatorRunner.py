@@ -13,6 +13,11 @@ class ExpectedSpeciesValidatorRunner(BaseValidatorRunner):
     def __init__(self, model: AdiDuctileIronModel):
         super().__init__(model)
 
+    def print_failed_validators(self) -> None:
+        print("Failed expected species validators: ")
+        super().print_failed_validators()
+        print("\n")
+
     def _initValidators(self) -> list[BaseValidator]:
         species: Species = self._setDuctileIronSpecies()
 
@@ -33,8 +38,3 @@ class ExpectedSpeciesValidatorRunner(BaseValidatorRunner):
             return Species(DuctileIronSpecies.GJS_1400_1, 890, 950, 270, 290)
         else:
             return None
-
-    def print_failed_validators(self) -> None:
-        print("Failed expected species validators: ")
-        super().print_failed_validators()
-        print("\n")

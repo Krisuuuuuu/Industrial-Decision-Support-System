@@ -4,7 +4,6 @@ from fuzzy_expert.rule import FuzzyRule
 
 
 class BaseRulesWrapper(ABC):
-
     @abstractmethod
     def set_rules(self) -> None: pass
 

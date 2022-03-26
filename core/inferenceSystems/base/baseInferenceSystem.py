@@ -7,9 +7,11 @@ from data.models.adiDuctileIronModel import AdiDuctileIronModel
 
 
 class BaseInferenceSystem(ABC):
-
     @abstractmethod
     def evaluate_results(self) -> None: pass
+
+    @abstractmethod
+    def _print_results(self) -> None: pass
 
     def __init__(self, adi_model: AdiDuctileIronModel, variables: dict[str, FuzzyVariable], rules: list[FuzzyRule]):
         self._adi_model: AdiDuctileIronModel = adi_model

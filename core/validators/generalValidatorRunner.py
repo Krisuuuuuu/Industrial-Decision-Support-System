@@ -20,6 +20,11 @@ class GeneralValidatorRunner(BaseValidatorRunner):
     def __init__(self, model: AdiDuctileIronModel):
         super().__init__(model)
 
+    def print_failed_validators(self) -> None:
+        print("Failed general validators: ")
+        super().print_failed_validators()
+        print("\n")
+
     def _initValidators(self) -> list[BaseValidator]:
         return [
             CarbonValueValidator(self._model),
@@ -33,8 +38,3 @@ class GeneralValidatorRunner(BaseValidatorRunner):
             ExpectedSpeciesValueValidator(self._model),
             WallThicknessValueValidator(self._model),
         ]
-
-    def print_failed_validators(self) -> None:
-        print("Failed general validators: ")
-        super().print_failed_validators()
-        print("\n")

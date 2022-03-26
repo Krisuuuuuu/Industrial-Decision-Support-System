@@ -14,10 +14,10 @@ class IndustrialDecisionSupportSystem:
     def __init__(self):
         self._inference_system: BaseInferenceSystem = None
         self._validator_runner: BaseValidatorRunner = None
-        self._adi_model: AdiDuctileIronModel = IndustrialDecisionSupportSystem.set_adi_model()
+        self._adi_model: AdiDuctileIronModel = IndustrialDecisionSupportSystem._set_adi_model()
 
     @staticmethod
-    def set_adi_model():
+    def _set_adi_model():
         adapter: Adapter = Adapter()
         return adapter.request()
 

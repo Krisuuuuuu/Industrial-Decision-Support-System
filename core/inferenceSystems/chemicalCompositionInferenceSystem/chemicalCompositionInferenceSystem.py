@@ -21,6 +21,9 @@ class ChemicalCompositionInferenceSystem(BaseInferenceSystem):
             sulfur=self._adi_model.chemical_composition.sulfur
         )
 
+        self._print_results()
+
+    def _print_results(self) -> None:
         print("Chemical Composition Inference System result: ")
         print(self._model(
             variables=self.fuzzy_variables,

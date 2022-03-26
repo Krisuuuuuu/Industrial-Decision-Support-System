@@ -6,15 +6,15 @@ from data.models.adiDuctileIronModel import AdiDuctileIronModel
 
 
 class BaseValidator(ABC):
+    @abstractmethod
+    def validate(self) -> None: pass
+
     def __init__(self, error_area: ErrorArea, error_type: ErrorType, name: str, model: AdiDuctileIronModel):
         self.ErrorArea: ErrorArea = error_area
         self.ErrorType: ErrorType = error_type
         self._name: str = name
         self._model: AdiDuctileIronModel = model
         self._occurs: bool = False
-
-    @abstractmethod
-    def validate(self) -> None: pass
 
     @property
     def name(self) -> str:
