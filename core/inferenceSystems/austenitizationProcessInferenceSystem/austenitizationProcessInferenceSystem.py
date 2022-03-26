@@ -20,7 +20,7 @@ class AustenitizationProcessInferenceSystem(s.BaseInferenceSystem):
         )
 
         print("Austenitization Process Inference System result: ")
-        print(self._model.plot(
+        print(self._model(
             variables=self.fuzzy_variables,
             rules=self.fuzzy_rules,
             austenitization_process_time=self._adi_model.manufacturing_process.austenitization_time,

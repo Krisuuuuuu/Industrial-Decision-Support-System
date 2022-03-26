@@ -22,10 +22,10 @@ class Adapter(Target, Adaptee):
     @staticmethod
     def _get_manufacturing_process_data(json_data: any) -> ManufacturingProcess:
         return ManufacturingProcess(
-            json_data['manufacturingProcess']['austenitizationTemperature'],
             json_data['manufacturingProcess']['austenitizationTime'],
-            json_data['manufacturingProcess']['isothermalTransformationTemperature'],
-            json_data['manufacturingProcess']['isothermalTransformationTime'])
+            json_data['manufacturingProcess']['austenitizationTemperature'],
+            json_data['manufacturingProcess']['isothermalTransformationTime'],
+            json_data['manufacturingProcess']['isothermalTransformationTemperature'])
 
     @staticmethod
     def _get_physical_data(json_data: any) -> PhysicalData:
