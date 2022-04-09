@@ -1,0 +1,18 @@
+{
+  "chemicalComposition": {
+    "carbon": 3.5,
+    "silicon": 2.5,
+    "magnesium": 0.5,
+    "sulfur": 0.02
+  },
+  "manufacturingProcess": {
+    "austenitizationTemperature": 930,
+    "austenitizationTime": 1.5,
+    "isothermalTransformationTemperature": 350,
+    "isothermalTransformationTime": 1.5
+  },
+  "physicalData": {
+    "wallThickness": 30,
+     "expectedSpecies": "GJS 1200-3"
+  }
+}
