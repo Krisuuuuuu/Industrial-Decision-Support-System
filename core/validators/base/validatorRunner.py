@@ -22,6 +22,10 @@ class BaseValidatorRunner(ABC):
     def validators(self) -> list[BaseValidator]:
         return self._validators
 
+    @property
+    def failed_validators(self) -> list[BaseValidator]:
+        return self._failed_validators
+
     def run(self) -> None:
         for validator in self.validators:
             validator.validate()

@@ -10,4 +10,4 @@ class AustenitizationTemperatureValueValidator(BaseValidator):
                          "Austenitization temperature value validator", model)
 
     def validate(self) -> None:
-        self._occurs = self._model.manufacturing_process.austenitization_time <= 0
+        self._occurs = self._model.manufacturing_process.austenitization_temperature <= 0 or self._model.manufacturing_process.austenitization_temperature > 1000

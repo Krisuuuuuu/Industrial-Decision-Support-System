@@ -10,4 +10,4 @@ class CarbonValueValidator(BaseValidator):
                          "Carbon value validator", model)
 
     def validate(self) -> None:
-        self._occurs = self._model.chemical_composition.carbon <= 0
+        self._occurs = self._model.chemical_composition.carbon <= 0 or self._model.chemical_composition.carbon > 100

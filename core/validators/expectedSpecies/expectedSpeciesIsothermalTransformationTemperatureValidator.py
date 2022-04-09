@@ -11,6 +11,6 @@ class ExpectedSpeciesIsothermalTransformationValidator(BaseExpectedSpeciesValida
 
     def validate(self) -> None:
         self._occurs = \
-            not (self._species_model.min_isothermal_transformation_temperature_value <= \
-                 self._model.manufacturing_process.isothermal_transformation_temperature <= \
+            not (self._species_model.min_isothermal_transformation_temperature_value <=
+                 self._model.manufacturing_process.isothermal_transformation_temperature <=
                  self._species_model.max_isothermal_transformation_temperature_value)

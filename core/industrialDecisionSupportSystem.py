@@ -23,6 +23,11 @@ class IndustrialDecisionSupportSystem:
 
     def start_evaluation(self) -> None:
         self._run_general_validators()
+
+        if not(self._check_general_validators()):
+            print("At least one of general validators failed. Check your input data and try again.")
+            return
+
         self._run_expected_species_validators()
         self._evaluate_chemical_composition()
         self._evaluate_austenitization_process()
@@ -42,10 +47,13 @@ class IndustrialDecisionSupportSystem:
         self._dispose_validator_runner()
         self._run_validators(ExpectedSpeciesValidatorRunner(self._adi_model))
 
+    def _check_general_validators(self) -> bool:
+        return len(self._validator_runner.failed_validators) == 0
+
     def _evaluate_inference_system(self, abstract_factory: AbstractFactory) -> None:
         self._dispose_inference_system()
         self._prepare_inference_system(abstract_factory)
-        self._inference_system.evaluate_results()
+        self._evaluate_results()
 
     def _evaluate_chemical_composition(self) -> None:
         self._evaluate_inference_system(ChemicalCompositionSystemFactory(self._adi_model))

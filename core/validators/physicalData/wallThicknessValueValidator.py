@@ -10,4 +10,4 @@ class WallThicknessValueValidator(BaseValidator):
                          "Wall thickness value validator", model)
 
     def validate(self) -> None:
-        self._occurs = self._model.physical_data.expected_species == ''
+        self._occurs = self._model.physical_data.wall_thickness <= 0 or self._model.physical_data.wall_thickness > 100

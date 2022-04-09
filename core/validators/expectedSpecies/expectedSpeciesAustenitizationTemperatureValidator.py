@@ -11,6 +11,6 @@ class ExpectedSpeciesAustenizationTemperatureValidator(BaseExpectedSpeciesValida
 
     def validate(self) -> None:
         self._occurs = \
-            not (self._species_model.min_austenitization_temperature_value <= \
-                 self._model.manufacturing_process.austenitization_temperature <= \
+            not (self._species_model.min_austenitization_temperature_value <=
+                 self._model.manufacturing_process.austenitization_temperature <=
                  self._species_model.max_austenitization_temperature_value)

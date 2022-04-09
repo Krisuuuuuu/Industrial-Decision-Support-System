@@ -10,4 +10,4 @@ class MagnesiumValueValidator(BaseValidator):
                          "Magnesium value validator", model)
 
     def validate(self) -> None:
-        self._occurs = self._model.chemical_composition.magnesium <= 0
+        self._occurs = self._model.chemical_composition.magnesium <= 0 or self._model.chemical_composition.magnesium > 100

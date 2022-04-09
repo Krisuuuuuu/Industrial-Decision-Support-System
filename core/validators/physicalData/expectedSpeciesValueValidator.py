@@ -10,4 +10,4 @@ class ExpectedSpeciesValueValidator(BaseValidator):
                          "Expected species value validator", model)
 
     def validate(self) -> None:
-        self._occurs = self._model.physical_data.wall_thickness <= 0
+        self._occurs = self._model.physical_data.expected_species == ''

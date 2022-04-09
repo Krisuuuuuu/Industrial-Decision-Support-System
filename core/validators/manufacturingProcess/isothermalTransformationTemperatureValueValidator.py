@@ -10,4 +10,4 @@ class IsothermalTransformationTemperatureValueValidator(BaseValidator):
                          "Isothermal transformation temperature value validator", model)
 
     def validate(self) -> None:
-        self._occurs = self._model.manufacturing_process.isothermal_transformation_temperature <= 0
+        self._occurs = self._model.manufacturing_process.isothermal_transformation_temperature <= 0 or self._model.manufacturing_process.isothermal_transformation_temperature > 500

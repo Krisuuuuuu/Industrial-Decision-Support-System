@@ -10,4 +10,4 @@ class SiliconValueValidator(BaseValidator):
                          "Silicon value validator", model)
 
     def validate(self) -> None:
-        self._occurs = self._model.chemical_composition.silicon <= 0
+        self._occurs = self._model.chemical_composition.silicon <= 0 or self._model.chemical_composition.silicon > 100

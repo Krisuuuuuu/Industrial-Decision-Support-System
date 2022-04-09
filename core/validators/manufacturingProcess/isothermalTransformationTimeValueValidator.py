@@ -10,4 +10,4 @@ class IsothermalTransformationTimeValueValidator(BaseValidator):
                          "Isothermal transformation time value validator", model)
 
     def validate(self) -> None:
-        self._occurs = self._model.manufacturing_process.isothermal_transformation_time <= 0
+        self._occurs = self._model.manufacturing_process.isothermal_transformation_time <= 0 or self._model.manufacturing_process.isothermal_transformation_time > 24
