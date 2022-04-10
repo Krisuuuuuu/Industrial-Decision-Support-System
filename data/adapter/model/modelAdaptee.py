@@ -3,10 +3,10 @@ import pathlib
 from abc import ABC
 from json import JSONDecodeError
 
-SRC_FILE = pathlib.Path.joinpath(pathlib.Path(__file__).parent.parent.parent, 'resources/adiDuctileIronInfo.json')
+SRC_FILE = pathlib.Path.joinpath(pathlib.Path(__file__).parent.parent.parent.parent, 'resources/adiDuctileIronInfo.json')
 
 
-class Adaptee(ABC):
+class ModelAdaptee(ABC):
     @staticmethod
     def _load_json_from_file() -> any:
         try:

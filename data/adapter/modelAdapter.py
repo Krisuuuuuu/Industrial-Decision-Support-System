@@ -1,4 +1,4 @@
-from base.adaptee import Adaptee
+from model.modelAdaptee import ModelAdaptee
 from base.target import Target
 from data.models.adiDuctileIronModel import AdiDuctileIronModel
 from data.models.chemicalComposition import ChemicalComposition
@@ -6,7 +6,7 @@ from data.models.manufacturingProcess import ManufacturingProcess
 from data.models.physicalData import PhysicalData
 
 
-class ModelAdapter(Target, Adaptee):
+class ModelAdapter(Target, ModelAdaptee):
     def request(self) -> AdiDuctileIronModel:
         data: any = ModelAdapter._load_json_from_file()
         return ModelAdapter._get_adi_ductile_iron_model(data)

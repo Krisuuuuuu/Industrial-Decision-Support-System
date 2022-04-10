@@ -3,12 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="0a3592db-6dcc-433e-9f3e-ff90567e9388" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/core/imageAnalysis/analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/adapter/imageAdapter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/adapter/images/imageAdaptee.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/industrialDecisionSupportSystem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/adapter/adaptee.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/base/adaptee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/adapter/adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/modelAdapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/adapter/target.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/base/target.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/adapter/base/adaptee.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/model/modelAdaptee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/adapter/base/target.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/base/target.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/adapter/modelAdapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/adapter/modelAdapter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,23 +48,23 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/factory" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/adapter/imageAdapter" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\data\adapter\imageAdapter" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\factory" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\builder" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\inferenceSystems\chemicalCompositionInferenceSystem" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\inferenceSystems\austenitizationProcessInferenceSystem" />
-      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\data\adapter\imageAdapter" />
+      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\data\adapter\modelAdapter" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\data\adapter\base" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\data\adapter" />
       <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\expectedSpecies" />
-      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\expectedSpecies\models" />
-      <recent name="C:\Users\krisu\OneDrive\Pulpit\Industrial-Decision-Support-System\core\validators\base\models" />
     </key>
   </component>
   <component name="RunManager">
@@ -115,6 +116,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/data/adapter/modelAdapter.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="self._inference_system" language="Python" />
