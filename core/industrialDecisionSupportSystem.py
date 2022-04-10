@@ -1,4 +1,4 @@
-from adapter import Adapter
+from modelAdapter import ModelAdapter
 from core.factory.austenitizationProcessSystemFactory import AustenitizationProcessSystemFactory
 from core.factory.base.abstractFactory import AbstractFactory
 from core.factory.chemicalCompositionSystemFactory import ChemicalCompositionSystemFactory
@@ -18,7 +18,7 @@ class IndustrialDecisionSupportSystem:
 
     @staticmethod
     def _set_adi_model():
-        adapter: Adapter = Adapter()
+        adapter: ModelAdapter = ModelAdapter()
         return adapter.request()
 
     def start_evaluation(self) -> None:
