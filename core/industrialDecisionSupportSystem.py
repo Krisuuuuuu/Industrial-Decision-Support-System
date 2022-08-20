@@ -1,4 +1,6 @@
-from adapter import Adapter
+from core.imageAnalysis.analyzer import Analyzer
+from imageAdapter import ImageAdapter
+from modelAdapter import ModelAdapter
 from core.factory.austenitizationProcessSystemFactory import AustenitizationProcessSystemFactory
 from core.factory.base.abstractFactory import AbstractFactory
 from core.factory.chemicalCompositionSystemFactory import ChemicalCompositionSystemFactory
@@ -14,12 +16,21 @@ class IndustrialDecisionSupportSystem:
     def __init__(self):
         self._inference_system: BaseInferenceSystem = None
         self._validator_runner: BaseValidatorRunner = None
+        self._analyzer: Analyzer = Analyzer()
         self._adi_model: AdiDuctileIronModel = IndustrialDecisionSupportSystem._set_adi_model()
 
     @staticmethod
-    def _set_adi_model():
-        adapter: Adapter = Adapter()
+    def _set_adi_model() -> AdiDuctileIronModel:
+        adapter: ModelAdapter = ModelAdapter()
         return adapter.request()
+
+    @staticmethod
+    def _set_test_data(adapter: ImageAdapter) -> None:
+        return adapter.request()
+
+    @staticmethod
+    def _set_train_data(adapter: ImageAdapter) -> None:
+        return adapter.train_data_request()
 
     def start_evaluation(self) -> None:
         self._run_general_validators()
@@ -32,6 +43,9 @@ class IndustrialDecisionSupportSystem:
         self._evaluate_chemical_composition()
         self._evaluate_austenitization_process()
         self._evaluate_isothermal_transformation()
+
+        self._run_images_analysis()
+
         self._dispose_all_components()
 
     def _run_validators(self, validator_runner: BaseValidatorRunner) -> None:
@@ -70,12 +84,24 @@ class IndustrialDecisionSupportSystem:
     def _evaluate_results(self) -> None:
         self._inference_system.evaluate_results()
 
+    def _run_images_analysis(self) -> None:
+        self._set_image_data()
+
+    def _set_image_data(self) -> None:
+        adapter: ImageAdapter = ImageAdapter()
+        self._analyzer.set_image_data(IndustrialDecisionSupportSystem._set_test_data(adapter),
+                                      IndustrialDecisionSupportSystem._set_train_data(adapter))
+
     def _dispose_inference_system(self) -> None:
         self._inference_system = None
 
     def _dispose_validator_runner(self) -> None:
         self._validator_runner = None
 
+    def _dispose_analyzer(self) -> None:
+        self._analyzer = None
+
     def _dispose_all_components(self) -> None:
         self._dispose_inference_system()
         self._dispose_validator_runner()
+        self._dispose_analyzer()

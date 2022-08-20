@@ -1,15 +1,15 @@
-from data.adapter.adaptee import Adaptee
-from data.adapter.target import Target
+from model.modelAdaptee import ModelAdaptee
+from base.target import Target
 from data.models.adiDuctileIronModel import AdiDuctileIronModel
 from data.models.chemicalComposition import ChemicalComposition
 from data.models.manufacturingProcess import ManufacturingProcess
 from data.models.physicalData import PhysicalData
 
 
-class Adapter(Target, Adaptee):
+class ModelAdapter(Target, ModelAdaptee):
     def request(self) -> AdiDuctileIronModel:
-        data: any = Adapter._load_json_from_file()
-        return Adapter._get_adi_ductile_iron_model(data)
+        data: any = ModelAdapter._load_json_from_file()
+        return ModelAdapter._get_adi_ductile_iron_model(data)
 
     @staticmethod
     def _get_chemical_composition_data(json_data: any) -> ChemicalComposition:
@@ -35,7 +35,7 @@ class Adapter(Target, Adaptee):
 
     @staticmethod
     def _get_adi_ductile_iron_model(json_data: any) -> AdiDuctileIronModel:
-        chemical_composition: ChemicalComposition = Adapter._get_chemical_composition_data(json_data)
-        manufacturing_process: ManufacturingProcess = Adapter._get_manufacturing_process_data(json_data)
-        physical_data: PhysicalData = Adapter._get_physical_data(json_data)
+        chemical_composition: ChemicalComposition = ModelAdapter._get_chemical_composition_data(json_data)
+        manufacturing_process: ManufacturingProcess = ModelAdapter._get_manufacturing_process_data(json_data)
+        physical_data: PhysicalData = ModelAdapter._get_physical_data(json_data)
         return AdiDuctileIronModel(chemical_composition, manufacturing_process, physical_data)
